@@ -176,7 +176,7 @@
               <span class="code-badge">TS 5.4</span>
             </div>
             <pre class="code-body"><code><span class="c-key">export const</span> <span class="c-name">engineer</span> = {
-  name: <span class="c-str">"Alex Morgan"</span>,
+  name: <span class="c-str">"<span data-bind="identity.name">Alex Morgan</span>"</span>,
   role: <span class="c-str">"Senior Software Engineer"</span>,
   years: <span class="c-num">9</span>,
   focus: [<span class="c-str">"full-stack"</span>, <span class="c-str">"system design"</span>, <span class="c-str">"AI"</span>],
@@ -236,7 +236,7 @@
       <div class="container about-grid">
         <div class="about-portrait reveal" data-reveal>
           <div class="portrait-tile">
-            <span class="portrait-mono">AM</span>
+            <span class="portrait-mono" data-bind="identity.initials">AM</span>
             <span class="portrait-scan" aria-hidden="true"></span>
           </div>
           <div class="portrait-meta">

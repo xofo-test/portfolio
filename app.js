@@ -66,11 +66,30 @@
     if (!name) return;
     var legacy = 'Alex Morgan';
     if (name === legacy) return;
-    document.title = document.title.split(legacy).join(name);
+
+    function swap(value) {
+      return value ? value.split(legacy).join(name) : value;
+    }
+
+    document.title = swap(document.title);
+
     var metas = document.querySelectorAll('meta[name="description"], meta[property="og:title"], meta[property="og:description"], meta[name="twitter:title"], meta[name="twitter:description"]');
     for (var i = 0; i < metas.length; i++) {
       var content = metas[i].getAttribute('content');
-      if (content) metas[i].setAttribute('content', content.split(legacy).join(name));
+      if (content) metas[i].setAttribute('content', swap(content));
+    }
+
+    var labels = document.querySelectorAll('[aria-label]');
+    for (var j = 0; j < labels.length; j++) {
+      var label = labels[j].getAttribute('aria-label');
+      if (label && label.indexOf(legacy) !== -1) labels[j].setAttribute('aria-label', swap(label));
+    }
+
+    var jsonLd = document.querySelectorAll('script[type="application/ld+json"]');
+    for (var k = 0; k < jsonLd.length; k++) {
+      if (jsonLd[k].textContent && jsonLd[k].textContent.indexOf(legacy) !== -1) {
+        jsonLd[k].textContent = swap(jsonLd[k].textContent);
+      }
     }
   }
 
@@ -89,13 +108,6 @@
       el = hrefEls[i];
       val = getPath(D, el.getAttribute('data-bind-href'));
       if (val !== undefined) el.setAttribute('href', val);
-    }
-
-    var contentEls = document.querySelectorAll('[data-bind-content]');
-    for (i = 0; i < contentEls.length; i++) {
-      el = contentEls[i];
-      val = getPath(D, el.getAttribute('data-bind-content'));
-      if (val !== undefined) el.setAttribute('content', val);
     }
 
     var copyEls = document.querySelectorAll('[data-bind-copy]');
@@ -155,13 +167,17 @@
   function closeNav() {
     if (!mobileNav || mobileNav.hidden) return;
     mobileNav.hidden = true;
-    if (navToggle) navToggle.setAttribute('aria-expanded', 'false');
+    if (navToggle) {
+      navToggle.setAttribute('aria-expanded', 'false');
+      navToggle.setAttribute('aria-label', 'Open menu');
+    }
   }
 
   if (navToggle && mobileNav) {
     navToggle.addEventListener('click', function () {
       var isOpen = navToggle.getAttribute('aria-expanded') === 'true';
       navToggle.setAttribute('aria-expanded', isOpen ? 'false' : 'true');
+      navToggle.setAttribute('aria-label', isOpen ? 'Open menu' : 'Close menu');
       mobileNav.hidden = isOpen;
     });
 
@@ -299,6 +315,7 @@
     if (heading) {
       heading.id = 'case-dialog-title';
       heading.setAttribute('tabindex', '-1');
+      dialog.setAttribute('aria-labelledby', 'case-dialog-title');
       heading.focus({ preventScroll: true });
     }
   }
@@ -336,6 +353,7 @@
       if (window.location.hash) {
         if (history.replaceState) history.replaceState(null, '', window.location.pathname + window.location.search);
       }
+      if (lastCaseTrigger && document.contains(lastCaseTrigger)) lastCaseTrigger.focus();
     });
 
     var initial = window.location.hash.replace('#', '');
