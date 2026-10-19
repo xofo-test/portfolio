@@ -19,18 +19,18 @@ window.PORTFOLIO_DATA = {
   /* ---- Site metadata (used for canonical URLs and structured data) ---- */
   site: {
     url: "https://alexmorgan.dev",          // <-- set to your real domain
-    title: "Alex Morgan — Senior Software Engineer",
+    title: "MR Tony MR — Senior Software Engineer",
     description:
       "Senior software engineer with 9+ years building full-stack platforms, " +
       "system design and production AI. Portfolio, case studies and architecture work.",
-    author: "Alex Morgan"
+    author: "MR Tony MR"
   },
 
   /* ---- Identity ---- */
   identity: {
-    name: "Alex Morgan",
-    initials: "AM",
-    brand: { first: "alex", last: "morgan" },
+    name: "MR Tony MR",
+    initials: "TM",
+    brand: { first: "tony", last: "mr" },
     role: "Senior Software Engineer",
     subrole: "Full-Stack & AI Platforms",
     email: "alex@alexmorgan.dev",

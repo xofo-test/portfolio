@@ -1,6 +1,6 @@
 # Portfolio — Senior Software Engineer
 
-A static, zero-build portfolio for **Alex Morgan**, a Senior Software Engineer with
+A static, zero-build portfolio for **MR Tony MR**, a Senior Software Engineer with
 9+ years of experience in full-stack development, system design and AI-powered
 products. Built with plain HTML, CSS and vanilla JavaScript — no framework, no
 server, no build step.
@@ -40,7 +40,7 @@ handles, hero strengths, daily-stack band and the technical-skills grid — live
 
 ```js
 identity: {
-  name: "Alex Morgan",        // change me
+  name: "MR Tony MR",        // change me
   email: "alex@alexmorgan.dev",
   ...
 },
@@ -53,7 +53,7 @@ social: {
 Narrative content (About, experience timeline, project case studies, AI/architecture
 expertise, achievements, education/certifications) is hardcoded in the HTML files,
 matching the approved UI contract. To rebrand deeply, search-and-replace the name
-"Alex Morgan" and update those sections in place.
+"MR Tony MR" and update those sections in place.
 
 ### Before publishing
 

@@ -22,8 +22,8 @@
     <path d="M150 0v630M300 0v630M450 0v630M600 0v630M750 0v630M900 0v630M1050 0v630"/>
   </g>
   <rect x="72" y="70" width="150" height="150" rx="34" fill="#0d131c" stroke="#7c9cff" stroke-opacity="0.55" stroke-width="2"/>
-  <text x="147" y="166" font-family="Inter, 'Segoe UI', -apple-system, sans-serif" font-size="56" font-weight="700" fill="url(#accent)" text-anchor="middle">AM</text>
-  <text x="72" y="330" font-family="Inter, 'Segoe UI', -apple-system, sans-serif" font-size="72" font-weight="700" fill="#e9eef7">Alex Morgan</text>
+  <text x="147" y="166" font-family="Inter, 'Segoe UI', -apple-system, sans-serif" font-size="56" font-weight="700" fill="url(#accent)" text-anchor="middle">TM</text>
+  <text x="72" y="330" font-family="Inter, 'Segoe UI', -apple-system, sans-serif" font-size="72" font-weight="700" fill="#e9eef7">MR Tony MR</text>
   <text x="72" y="392" font-family="Inter, 'Segoe UI', -apple-system, sans-serif" font-size="34" font-weight="500" fill="#7c9cff">Senior Software Engineer</text>
   <text x="72" y="446" font-family="Inter, 'Segoe UI', -apple-system, sans-serif" font-size="26" fill="#8a99af">Full-Stack &amp; AI Platforms · 9+ years in production engineering</text>
   <rect x="72" y="520" width="76" height="4" rx="2" fill="url(#accent)"/>
