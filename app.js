@@ -64,7 +64,7 @@
   function rebrandMeta() {
     var name = D.identity && D.identity.name;
     if (!name) return;
-    var legacy = 'Alex Morgan';
+    var legacy = 'MR Tony MR';
     if (name === legacy) return;
 
     function swap(value) {
