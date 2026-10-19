@@ -1,0 +1,410 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AI &amp; Architecture Expertise — Alex Morgan</title>
+  <meta name="description" content="AI engineering and system design expertise: RAG pipelines, LLM orchestration, agents, evaluation, multi-tenant architecture, event-driven systems and frontend platforms." />
+  <meta name="color-scheme" content="dark light" />
+  <meta name="theme-color" content="#070a0f" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="AI &amp; Architecture Expertise — Alex Morgan" />
+  <meta property="og:description" content="AI engineering and system design expertise: RAG pipelines, LLM orchestration, agents, evaluation, multi-tenant architecture, event-driven systems and frontend platforms." />
+  <meta property="og:url" content="https://alexmorgan.dev/expertise.html" />
+  <meta property="og:image" content="https://alexmorgan.dev/assets/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="AI & Architecture Expertise — Alex Morgan" />
+  <meta name="twitter:description" content="AI engineering and system design expertise: RAG pipelines, LLM orchestration, agents, evaluation, multi-tenant architecture, event-driven systems and frontend platforms." />
+  <link rel="canonical" href="https://alexmorgan.dev/expertise.html" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;1,8..60,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script>
+    (function () {
+      document.documentElement.classList.add('js');
+      try {
+        var saved = localStorage.getItem('am-theme');
+        var light = window.matchMedia('(prefers-color-scheme: light)').matches;
+        document.documentElement.dataset.theme = saved || (light ? 'light' : 'dark');
+      } catch (e) { /* keep default */ }
+    })();
+  </script>
+  <script src="js/data.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" data-header>
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Alex Morgan — overview">
+        <span class="brand-mark" aria-hidden="true" data-bind="identity.initials">AM</span>
+        <span class="brand-text"><span data-bind="identity.brand.first">alex</span><span class="brand-dot">.</span><span data-bind="identity.brand.last">morgan</span></span>
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <a href="index.html">Overview</a>
+        <a href="experience.html">Experience</a>
+        <a href="projects.html">Projects</a>
+        <a href="expertise.html" aria-current="page">Expertise</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-btn theme-toggle" type="button" data-theme-toggle aria-label="Switch to light theme" title="Switch theme">
+          <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.6v2.2M12 19.2v2.2M2.6 12h2.2M19.2 12h2.2M5.4 5.4l1.6 1.6M17 17l1.6 1.6M18.6 5.4L17 7M7 17l-1.6 1.6"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20.4 14.6A8.6 8.6 0 0 1 9.4 3.6a8.6 8.6 0 1 0 11 11Z"/></svg>
+        </button>
+        <a class="btn btn-sm btn-ghost header-resume" href="resume.html">Résumé</a>
+        <button class="icon-btn nav-toggle" type="button" aria-expanded="false" aria-controls="mobileNav" aria-label="Open menu" data-nav-toggle>
+          <span class="burger" aria-hidden="true"><span></span><span></span></span>
+        </button>
+      </div>
+    </div>
+    <div class="mobile-nav" id="mobileNav" hidden>
+      <nav class="container mobile-nav-inner" aria-label="Mobile">
+        <a href="index.html">Overview</a>
+        <a href="experience.html">Experience</a>
+        <a href="projects.html">Projects</a>
+        <a href="expertise.html" aria-current="page">Expertise</a>
+        <a href="contact.html">Contact</a>
+        <a class="btn btn-primary btn-block" href="resume.html">Download résumé</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-head" aria-labelledby="page-title">
+      <div class="container">
+        <p class="kicker">AI &amp; engineering expertise</p>
+        <h1 class="h1" id="page-title">Systems first. Models second.</h1>
+        <p class="lead">
+          The AI work I do sits inside ordinary, hard software engineering: contracts,
+          tenancy, failure handling, evaluation and cost. Here is the reference
+          architecture I keep returning to, and the decisions behind it.
+        </p>
+        <div class="page-head-meta">
+          <span class="badge badge-live"><span class="pulse"></span> 4 production AI systems since 2023</span>
+          <span class="badge">RAG · Agents · Evals</span>
+          <span class="badge">Multi-tenant architecture</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ PRINCIPLES ============================ -->
+    <section class="section" aria-labelledby="principles-title">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="kicker">Engineering principles</p>
+            <h2 class="h2" id="principles-title">How I make architecture decisions.</h2>
+          </div>
+          <p class="muted section-note">Three rules that have survived four companies and two rewrites.</p>
+        </div>
+
+        <div class="principle-grid">
+          <article class="principle reveal" data-reveal>
+            <div class="principle-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 7h16M4 12h10M4 17h13"/></svg>
+            </div>
+            <h3>Boring where it counts</h3>
+            <p>Money movement, identity and data storage get proven, well-understood technology. Novelty is spent on the product surface, where it earns attention.</p>
+          </article>
+          <article class="principle reveal" data-reveal>
+            <div class="principle-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 3 3 8l9 5 9-5-9-5Z"/><path d="m3 13 9 5 9-5M3 17.5l9 5 9-5"/></svg>
+            </div>
+            <h3>Design for change</h3>
+            <p>Clear boundaries, versioned contracts and reversible migrations. The measure of a design is how cheaply the next requirement can be added.</p>
+          </article>
+          <article class="principle reveal" data-reveal>
+            <div class="principle-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 19V5m0 14h16"/><path d="m7 15 4-5 3.5 3L20 7"/></svg>
+            </div>
+            <h3>Measure what you ship</h3>
+            <p>Every roadmap item names the metric it moves. For AI that means golden sets and citation accuracy, not demos that look impressive once.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ ARCHITECTURE ============================ -->
+    <section class="section section-alt" aria-labelledby="arch-title">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="kicker">Architecture &amp; system design</p>
+            <h2 class="h2" id="arch-title">A reference architecture I’ve shipped twice.</h2>
+          </div>
+          <p class="muted section-note">Multi-tenant SaaS with transactional core and an isolated AI path.</p>
+        </div>
+
+        <div class="arch-panel reveal" data-reveal>
+          <div class="arch-caption">
+            <span>Reference architecture · reviewed in production, 2024</span>
+            <div class="arch-legend">
+              <span><i class="legend-swatch is-accent"></i> AI path</span>
+              <span><i class="legend-swatch"></i> Standard path</span>
+            </div>
+          </div>
+
+          <div class="arch">
+            <p class="arch-layer-label">Clients</p>
+            <div class="arch-row cols-3">
+              <div class="arch-node"><strong>Web console</strong><span>React 19 · TypeScript · SSE</span></div>
+              <div class="arch-node"><strong>Partner portal</strong><span>Angular 17 · feature flags</span></div>
+              <div class="arch-node"><strong>Public API</strong><span>REST · OpenAPI 3.1</span></div>
+            </div>
+
+            <div class="arch-arrow" aria-hidden="true">↓</div>
+            <p class="arch-layer-label">Edge &amp; access</p>
+            <div class="arch-row cols-3">
+              <div class="arch-node"><strong>CDN + WAF</strong><span>cache · bot rules · TLS</span></div>
+              <div class="arch-node"><strong>API gateway</strong><span>OIDC · scopes · rate limits</span></div>
+              <div class="arch-node"><strong>BFF / GraphQL</strong><span>aggregation · schema checks</span></div>
+            </div>
+
+            <div class="arch-arrow" aria-hidden="true">↓</div>
+            <p class="arch-layer-label">Domain services</p>
+            <div class="arch-row cols-5">
+              <div class="arch-node"><strong>Payments ledger</strong><span>NestJS · double entry</span></div>
+              <div class="arch-node"><strong>Catalog &amp; pricing</strong><span>NestJS · versioned rules</span></div>
+              <div class="arch-node"><strong>Integration hub</strong><span>adapters · webhook inbox</span></div>
+              <div class="arch-node is-accent"><strong>AI orchestration</strong><span>retrieval · routing · evals</span></div>
+              <div class="arch-node"><strong>Jobs &amp; events</strong><span>workers · outbox · retries</span></div>
+            </div>
+
+            <div class="arch-arrow" aria-hidden="true">↓</div>
+            <p class="arch-layer-label">Data &amp; platform</p>
+            <div class="arch-row cols-5">
+              <div class="arch-node"><strong>PostgreSQL</strong><span>OLTP · RLS · read replicas</span></div>
+              <div class="arch-node"><strong>Redis</strong><span>cache · rate limits · queues</span></div>
+              <div class="arch-node is-accent"><strong>pgvector</strong><span>embeddings · hybrid search</span></div>
+              <div class="arch-node"><strong>Object storage</strong><span>documents · model artifacts</span></div>
+              <div class="arch-node"><strong>ClickHouse</strong><span>events · rollups</span></div>
+            </div>
+
+            <div class="arch-arrow" aria-hidden="true">↓</div>
+            <p class="arch-layer-label">Operations</p>
+            <div class="arch-row cols-3">
+              <div class="arch-node"><strong>Observability</strong><span>OpenTelemetry · SLOs · traces</span></div>
+              <div class="arch-node is-accent"><strong>Eval &amp; prompt registry</strong><span>golden sets · versioned prompts</span></div>
+              <div class="arch-node"><strong>Delivery</strong><span>CI/CD · canary · feature flags</span></div>
+            </div>
+          </div>
+
+          <div class="arch-notes">
+            <div class="arch-note">
+              <h4>Isolation</h4>
+              <p>The AI path never writes to the ledger directly. It proposes structured output to a domain service that validates and records it, so a model failure cannot corrupt money.</p>
+            </div>
+            <div class="arch-note">
+              <h4>Tenancy</h4>
+              <p>Every table carries a tenant key with row-level security, and every vector query filters by tenant before similarity search — never after.</p>
+            </div>
+            <div class="arch-note">
+              <h4>Failure modes</h4>
+              <p>Timeouts, budget guards, fallback models and a circuit breaker around each provider. Degrading to search-only is an explicit, tested state.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ AI EXPERTISE ============================ -->
+    <section class="section" aria-labelledby="ai-title">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="kicker">AI &amp; engineering expertise</p>
+            <h2 class="h2" id="ai-title">What I actually do with models.</h2>
+          </div>
+        </div>
+
+        <div class="ai-cap-grid">
+          <article class="ai-cap reveal" data-reveal>
+            <h3>RAG pipelines</h3>
+            <p>Clause- and section-aware chunking, hybrid BM25 + vector retrieval, cross-encoder reranking and citation-grounded responses that fail closed.</p>
+            <div class="tag-row"><span class="tag">pgvector</span><span class="tag">hybrid search</span><span class="tag">reranking</span></div>
+          </article>
+          <article class="ai-cap reveal" data-reveal>
+            <h3>LLM integration &amp; multi-model</h3>
+            <p>Provider abstraction with primary and fallback models, schema-validated structured output, streaming UX and per-tenant token budgets.</p>
+            <div class="tag-row"><span class="tag">Claude</span><span class="tag">OpenAI</span><span class="tag">structured output</span></div>
+          </article>
+          <article class="ai-cap reveal" data-reveal>
+            <h3>AI agents &amp; tool use</h3>
+            <p>Bounded tool-calling agents with allow-listed actions, confirmation steps for writes, and complete traces of every tool invocation.</p>
+            <div class="tag-row"><span class="tag">tool calling</span><span class="tag">guardrails</span><span class="tag">LangGraph</span></div>
+          </article>
+          <article class="ai-cap reveal" data-reveal>
+            <h3>Prompt engineering &amp; evals</h3>
+            <p>Prompts held in a registry and versioned like code, scored nightly against golden sets with recall, precision and citation checks.</p>
+            <div class="tag-row"><span class="tag">golden sets</span><span class="tag">Ragas</span><span class="tag">regression gates</span></div>
+          </article>
+          <article class="ai-cap reveal" data-reveal>
+            <h3>Embeddings &amp; vector search</h3>
+            <p>Model selection by retrieval quality per corpus, dimension and cost trade-offs, index tuning and tenant-filtered similarity queries.</p>
+            <div class="tag-row"><span class="tag">pgvector</span><span class="tag">Qdrant</span><span class="tag">HNSW</span></div>
+          </article>
+          <article class="ai-cap reveal" data-reveal>
+            <h3>AI-assisted development</h3>
+            <p>Review agents and prompt libraries that cut routine PR cycle time by a third — with human review still owning every merge.</p>
+            <div class="tag-row"><span class="tag">Copilot</span><span class="tag">Claude Code</span><span class="tag">code review</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ DECISION LOG ============================ -->
+    <section class="section section-alt" aria-labelledby="decisions-title">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="kicker">Decision log</p>
+            <h2 class="h2" id="decisions-title">Constraint, decision, trade-off.</h2>
+          </div>
+          <p class="muted section-note">The honest version of architecture: every choice costs something.</p>
+        </div>
+
+        <div data-tabs>
+          <div class="tabs" role="tablist" aria-label="Architecture decision logs">
+            <button class="tab" type="button" role="tab" id="tab-rag" aria-controls="panel-rag" aria-selected="true" tabindex="0">RAG platform</button>
+            <button class="tab" type="button" role="tab" id="tab-events" aria-controls="panel-events" aria-selected="false" tabindex="-1">Event analytics</button>
+            <button class="tab" type="button" role="tab" id="tab-api" aria-controls="panel-api" aria-selected="false" tabindex="-1">Multi-tenant API</button>
+          </div>
+
+          <div class="tabpanel" role="tabpanel" id="panel-rag" aria-labelledby="tab-rag" tabindex="0">
+            <div class="decision-table">
+              <div class="decision-row decision-row-head"><span>Constraint</span><span>Decision</span><span>Trade-off accepted</span></div>
+              <div class="decision-row">
+                <span>Compliance required clause-level citations</span>
+                <span>Retrieval-only answers; unsupported responses are rejected</span>
+                <span>~6% of queries escalate to a human reviewer</span>
+              </div>
+              <div class="decision-row">
+                <span>Policies were re-issued weekly</span>
+                <span>Version-scoped indexes, re-embedding only changed clauses</span>
+                <span>Ingestion is more complex; 40 minutes to reflect a new version</span>
+              </div>
+              <div class="decision-row">
+                <span>Strict tenant isolation</span>
+                <span>Tenant filter pushed into SQL and enforced by row-level security</span>
+                <span>No shared cache of embeddings across tenants</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="tabpanel" role="tabpanel" id="panel-events" aria-labelledby="tab-events" tabindex="0" hidden>
+            <div class="decision-table">
+              <div class="decision-row decision-row-head"><span>Constraint</span><span>Decision</span><span>Trade-off accepted</span></div>
+              <div class="decision-row">
+                <span>Reporting queries timed out after 20 minutes</span>
+                <span>ClickHouse with pre-aggregated daily and hourly rollups</span>
+                <span>More storage; 12% growth budgeted per year</span>
+              </div>
+              <div class="decision-row">
+                <span>Metric definitions drifted between teams</span>
+                <span>Semantic layer in git, reviewed like application code</span>
+                <span>Adding a metric takes about a day instead of minutes</span>
+              </div>
+              <div class="decision-row">
+                <span>Event volume tripled in twelve months</span>
+                <span>Tiered retention plus sampling for exploratory queries</span>
+                <span>Cold data is only available at daily granularity</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="tabpanel" role="tabpanel" id="panel-api" aria-labelledby="tab-api" tabindex="0" hidden>
+            <div class="decision-table">
+              <div class="decision-row decision-row-head"><span>Constraint</span><span>Decision</span><span>Trade-off accepted</span></div>
+              <div class="decision-row">
+                <span>Partners needed predictable throughput</span>
+                <span>Token-bucket limits per API key and per plan tier</span>
+                <span>Occasional throttling of noisy neighbours</span>
+              </div>
+              <div class="decision-row">
+                <span>Client retries caused duplicate charges</span>
+                <span>Idempotency keys on every mutating endpoint, 24h window</span>
+                <span>Key storage and expiry management</span>
+              </div>
+              <div class="decision-row">
+                <span>Bulk imports starved interactive traffic</span>
+                <span>Queue isolation with fair scheduling between tenants</span>
+                <span>Higher infrastructure baseline, one more system to operate</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ LEADERSHIP ============================ -->
+    <section class="section" aria-labelledby="lead-title">
+      <div class="container ai-band">
+        <div class="ai-copy reveal" data-reveal>
+          <p class="kicker">Technical leadership</p>
+          <h2 class="h2" id="lead-title">Seniority is mostly about making other people effective.</h2>
+          <p>
+            I have led squads of three to six engineers, hired four, and mentored six.
+            My teams keep written decision records, review designs before code, and
+            treat incidents as learning rather than blame. I still take on-call shifts
+            and still review pull requests — the engineering is not a phase I moved past.
+          </p>
+          <a class="btn btn-ghost" href="contact.html">Talk about a role</a>
+        </div>
+
+        <ol class="ai-list reveal" data-reveal>
+          <li><span class="ai-num">01</span><div><h3>Design reviews before code</h3><p>One-page design docs with alternatives considered; review within 48 hours so momentum is never the casualty.</p></div></li>
+          <li><span class="ai-num">02</span><div><h3>Review culture</h3><p>Small PRs, reviewed within a day, with review guidelines that focus on correctness and maintainability over style.</p></div></li>
+          <li><span class="ai-num">03</span><div><h3>Incident learning</h3><p>Blameless retrospectives with tracked action items; two provider outages became runbook improvements before the next one.</p></div></li>
+          <li><span class="ai-num">04</span><div><h3>Growth that sticks</h3><p>Explicit growth plans, pairing rotations and ownership of a production surface from week one.</p></div></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section cta-section" aria-labelledby="exp-cta-title">
+      <div class="container">
+        <div class="cta-card reveal" data-reveal>
+          <p class="kicker">Next</p>
+          <h2 class="h2" id="exp-cta-title">Want to see this thinking applied?</h2>
+          <p class="cta-sub">Each case study includes the architecture that came out of these principles — plus what I would change today.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="projects.html">Open the case studies</a>
+            <a class="btn btn-ghost" href="contact.html">Contact me</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="index.html" aria-label="Alex Morgan — overview">
+          <span class="brand-mark" aria-hidden="true" data-bind="identity.initials">AM</span>
+          <span class="brand-text"><span data-bind="identity.brand.first">alex</span><span class="brand-dot">.</span><span data-bind="identity.brand.last">morgan</span></span>
+        </a>
+        <p>Senior software engineer building full-stack platforms, systems and AI products. Seattle, Washington.</p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="experience.html">Experience</a>
+        <a href="projects.html">Projects</a>
+        <a href="expertise.html">Expertise</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="footer-meta">
+        <a href="mailto:alex@alexmorgan.dev" data-bind-href="identity.mailto" data-bind="identity.email">alex@alexmorgan.dev</a>
+        <a href="https://www.linkedin.com/in/alexmorgan-dev" data-bind-href="social.linkedin.url" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/alexmorgan-dev" data-bind-href="social.github.url" rel="noopener">GitHub</a>
+        <p class="footer-note">© <span data-year>2025</span> <span data-bind="identity.name">Alex Morgan</span> · Static portfolio, no tracking.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="toast" role="status" aria-live="polite" data-toast hidden></div>
+  <script src="app.js" defer></script>
+</body>
+</html>

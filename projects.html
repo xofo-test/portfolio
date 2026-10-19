@@ -1,0 +1,724 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Featured Projects — Alex Morgan, Senior Software Engineer</title>
+  <meta name="description" content="Five software engineering case studies: AI claims intelligence, B2B commerce re-platforming, product analytics at 240M events/day, a payments integration hub and an accessible design system." />
+  <meta name="color-scheme" content="dark light" />
+  <meta name="theme-color" content="#070a0f" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Featured Projects — Alex Morgan, Senior Software Engineer" />
+  <meta property="og:description" content="Five software engineering case studies: AI claims intelligence, B2B commerce re-platforming, product analytics at 240M events/day, a payments integration hub and an accessible design system." />
+  <meta property="og:url" content="https://alexmorgan.dev/projects.html" />
+  <meta property="og:image" content="https://alexmorgan.dev/assets/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Featured Projects — Alex Morgan, Senior Software Engineer" />
+  <meta name="twitter:description" content="Five software engineering case studies: AI claims intelligence, B2B commerce re-platforming, product analytics at 240M events/day, a payments integration hub and an accessible design system." />
+  <link rel="canonical" href="https://alexmorgan.dev/projects.html" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;1,8..60,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script>
+    (function () {
+      document.documentElement.classList.add('js');
+      try {
+        var saved = localStorage.getItem('am-theme');
+        var light = window.matchMedia('(prefers-color-scheme: light)').matches;
+        document.documentElement.dataset.theme = saved || (light ? 'light' : 'dark');
+      } catch (e) { /* keep default */ }
+    })();
+  </script>
+  <script src="js/data.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" data-header>
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Alex Morgan — overview">
+        <span class="brand-mark" aria-hidden="true" data-bind="identity.initials">AM</span>
+        <span class="brand-text"><span data-bind="identity.brand.first">alex</span><span class="brand-dot">.</span><span data-bind="identity.brand.last">morgan</span></span>
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <a href="index.html">Overview</a>
+        <a href="experience.html">Experience</a>
+        <a href="projects.html" aria-current="page">Projects</a>
+        <a href="expertise.html">Expertise</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-btn theme-toggle" type="button" data-theme-toggle aria-label="Switch to light theme" title="Switch theme">
+          <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.6v2.2M12 19.2v2.2M2.6 12h2.2M19.2 12h2.2M5.4 5.4l1.6 1.6M17 17l1.6 1.6M18.6 5.4L17 7M7 17l-1.6 1.6"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20.4 14.6A8.6 8.6 0 0 1 9.4 3.6a8.6 8.6 0 1 0 11 11Z"/></svg>
+        </button>
+        <a class="btn btn-sm btn-ghost header-resume" href="resume.html">Résumé</a>
+        <button class="icon-btn nav-toggle" type="button" aria-expanded="false" aria-controls="mobileNav" aria-label="Open menu" data-nav-toggle>
+          <span class="burger" aria-hidden="true"><span></span><span></span></span>
+        </button>
+      </div>
+    </div>
+    <div class="mobile-nav" id="mobileNav" hidden>
+      <nav class="container mobile-nav-inner" aria-label="Mobile">
+        <a href="index.html">Overview</a>
+        <a href="experience.html">Experience</a>
+        <a href="projects.html" aria-current="page">Projects</a>
+        <a href="expertise.html">Expertise</a>
+        <a href="contact.html">Contact</a>
+        <a class="btn btn-primary btn-block" href="resume.html">Download résumé</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-head" aria-labelledby="page-title">
+      <div class="container">
+        <p class="kicker">Featured projects</p>
+        <h1 class="h1" id="page-title">Five projects, told as case studies.</h1>
+        <p class="lead">
+          Not screenshots — the decisions. Each case study covers the business problem,
+          the solution, the architecture, what I owned, what went wrong, and the numbers
+          that came out of it. Client names are anonymised where required.
+        </p>
+        <div class="page-head-meta">
+          <span class="badge badge-live"><span class="pulse"></span> Open any card for the full case study</span>
+          <span class="badge">2020 — 2025</span>
+          <span class="badge">AI · Commerce · Data · Platform</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="grid-title">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="kicker">Case study library</p>
+            <h2 class="h2" id="grid-title">Filter by the kind of problem.</h2>
+          </div>
+        </div>
+
+        <div class="filter-bar" role="group" aria-label="Filter case studies">
+          <button class="filter-btn" type="button" data-filter="all" aria-pressed="true">All work</button>
+          <button class="filter-btn" type="button" data-filter="ai" aria-pressed="false">AI &amp; data</button>
+          <button class="filter-btn" type="button" data-filter="commerce" aria-pressed="false">Commerce &amp; payments</button>
+          <button class="filter-btn" type="button" data-filter="platform" aria-pressed="false">Platform &amp; frontend</button>
+          <p class="filter-status" role="status" aria-live="polite" data-filter-status>5 case studies</p>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card" id="atlas" data-tags="ai" aria-labelledby="proj-atlas">
+            <div class="project-card-top">
+              <span class="badge">AI platform</span>
+              <span class="project-index">01</span>
+            </div>
+            <h2 id="proj-atlas">Atlas — Claims intelligence</h2>
+            <p>Retrieval-augmented claim evidence for insurance adjusters, with mandatory citations and a compliance-grade audit trail.</p>
+            <ul class="work-metrics">
+              <li><strong>62%</strong> faster triage</li>
+              <li><strong>0.94</strong> recall@10</li>
+              <li><strong>14k</strong> docs/day</li>
+            </ul>
+            <span class="work-stack">NestJS · Python · pgvector · React · Claude</span>
+            <div class="project-foot">
+              <button class="btn btn-ghost btn-sm" type="button" data-case="atlas">Read case study</button>
+              <span class="project-index">7 months · 2024</span>
+            </div>
+          </article>
+
+          <article class="project-card" id="orbit" data-tags="commerce" aria-labelledby="proj-orbit">
+            <div class="project-card-top">
+              <span class="badge">Commerce platform</span>
+              <span class="project-index">02</span>
+            </div>
+            <h2 id="proj-orbit">Orbit — B2B commerce rebuild</h2>
+            <p>Strangler-fig extraction of a nine-year-old monolith into domain services, with a new React storefront and partner API.</p>
+            <ul class="work-metrics">
+              <li><strong>4.1×</strong> faster checkout</li>
+              <li><strong>1.8M</strong> orders/mo</li>
+              <li><strong>0</strong> release freezes</li>
+            </ul>
+            <span class="work-stack">React · NestJS · PostgreSQL · SQS · AWS</span>
+            <div class="project-foot">
+              <button class="btn btn-ghost btn-sm" type="button" data-case="orbit">Read case study</button>
+              <span class="project-index">14 months · 2020–21</span>
+            </div>
+          </article>
+
+          <article class="project-card" id="signal" data-tags="ai" aria-labelledby="proj-signal">
+            <div class="project-card-top">
+              <span class="badge">Data platform</span>
+              <span class="project-index">03</span>
+            </div>
+            <h2 id="proj-signal">Signal — Product analytics</h2>
+            <p>Event pipeline and self-serve reporting that retired the weekly CSV email for 300 product, sales and support staff.</p>
+            <ul class="work-metrics">
+              <li><strong>240M</strong> events/day</li>
+              <li><strong>11s</strong> query p95</li>
+              <li><strong>99.98%</strong> uptime</li>
+            </ul>
+            <span class="work-stack">Node.js · ClickHouse · Redis · React · Docker</span>
+            <div class="project-foot">
+              <button class="btn btn-ghost btn-sm" type="button" data-case="signal">Read case study</button>
+              <span class="project-index">9 months · 2021</span>
+            </div>
+          </article>
+
+          <article class="project-card" id="ledger" data-tags="commerce" aria-labelledby="proj-ledger">
+            <div class="project-card-top">
+              <span class="badge">Integrations</span>
+              <span class="project-index">04</span>
+            </div>
+            <h2 id="proj-ledger">Ledger — Payments integration hub</h2>
+            <p>Eleven payment providers behind one adapter contract, with idempotent webhooks and automated reconciliation.</p>
+            <ul class="work-metrics">
+              <li><strong>$46M</strong> /month</li>
+              <li><strong>0.02%</strong> variance</li>
+              <li><strong>11</strong> providers</li>
+            </ul>
+            <span class="work-stack">NestJS · Laravel · PostgreSQL · Redis · AWS</span>
+            <div class="project-foot">
+              <button class="btn btn-ghost btn-sm" type="button" data-case="ledger">Read case study</button>
+              <span class="project-index">8 months · 2022–23</span>
+            </div>
+          </article>
+
+          <article class="project-card" id="compass" data-tags="platform" aria-labelledby="proj-compass">
+            <div class="project-card-top">
+              <span class="badge">Frontend platform</span>
+              <span class="project-index">05</span>
+            </div>
+            <h2 id="proj-compass">Compass — Design system</h2>
+            <p>One token-driven component library served to 34 React and Angular apps, with accessibility checks in CI.</p>
+            <ul class="work-metrics">
+              <li><strong>34</strong> apps adopted</li>
+              <li><strong>WCAG</strong> 2.1 AA</li>
+              <li><strong>38%</strong> faster UI delivery</li>
+            </ul>
+            <span class="work-stack">React · Angular · TypeScript · Storybook · CI</span>
+            <div class="project-foot">
+              <button class="btn btn-ghost btn-sm" type="button" data-case="compass">Read case study</button>
+              <span class="project-index">11 months · 2021–22</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section cta-section" aria-labelledby="proj-cta-title">
+      <div class="container">
+        <div class="cta-card">
+          <p class="kicker">Reference</p>
+          <h2 class="h2" id="proj-cta-title">Happy to walk through the trade-offs live.</h2>
+          <p class="cta-sub">I keep architecture decision records for every system above. If a role needs a design exercise, I’m comfortable whiteboarding these patterns under pressure.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="contact.html">Contact me</a>
+            <a class="btn btn-ghost" href="expertise.html">See architecture work</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ CASE STUDY DIALOG ============================ -->
+    <dialog class="case-dialog" id="caseDialog" aria-label="Case study details">
+      <div class="case-shell">
+        <div class="case-bar">
+          <span class="case-bar-label">Case study</span>
+          <button class="case-close" type="button" data-case-close aria-label="Close case study">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6 6 18"/></svg>
+          </button>
+        </div>
+        <div class="case-inner" data-case-body></div>
+      </div>
+    </dialog>
+
+    <!-- ---------- Templates: one per case study ---------- -->
+    <template id="tpl-atlas">
+      <span class="badge">AI platform · Insurance</span>
+      <h2 class="case-title">Atlas — Claims intelligence</h2>
+      <p class="case-summary">
+        A retrieval-augmented assistant that reads policy wordings, endorsements and claim
+        notes, then assembles cited claim evidence for adjusters at a mid-market insurer
+        handling 14,000 documents a day.
+      </p>
+      <dl class="case-meta">
+        <div><dt>Role</dt><dd>Lead engineer &amp; architect</dd></div>
+        <div><dt>Timeline</dt><dd>7 months, 2024</dd></div>
+        <div><dt>Team</dt><dd>4 engineers, 1 PM, 2 domain experts</dd></div>
+        <div><dt>Surface</dt><dd>Internal console + REST API</dd></div>
+      </dl>
+
+      <div class="case-block">
+        <h4>Business problem</h4>
+        <p>
+          Adjusters spent roughly 45 minutes per claim reconciling coverage across policy
+          PDFs, endorsements and 12 upstream systems. An audit found 18% of decisions were
+          reopened because an exclusion had been missed. The insurer had tried an
+          off-the-shelf chat assistant, but it could not cite sources, so compliance
+          rejected it and adjusters stopped trusting it after two weeks.
+        </p>
+      </div>
+
+      <div class="case-block">
+        <h4>Solution</h4>
+        <p>
+          Atlas ingests policy documents on a versioned schedule, chunks at clause
+          boundaries rather than fixed token windows, and retrieves with a hybrid of
+          BM25 keyword search and embedding similarity before reranking the top 40
+          candidates. Claude then extracts structured coverage fields into a schema
+          validated with Zod. Every answer must carry clause-level citations; the API
+          refuses to return an answer with none. A review console lets adjusters accept,
+          edit or reject each field, and all of it lands in an append-only audit log.
+        </p>
+      </div>
+
+      <div class="case-block">
+        <h4>Architecture</h4>
+        <ol class="arch-stack">
+          <li><span>01</span><span>React console with streaming answers and side-by-side clause viewer</span></li>
+          <li><span>02</span><span>NestJS API: OIDC auth, tenant scoping, audit log, feedback capture</span></li>
+          <li><span>03</span><span>Python ingestion workers: OCR, clause splitter, embedding and versioning</span></li>
+          <li><span>04</span><span>PostgreSQL + pgvector for clauses; S3 for source PDFs; Redis for query cache</span></li>
+          <li><span>05</span><span>Retrieval service: hybrid search, cross-encoder rerank, citation builder</span></li>
+          <li><span>06</span><span>LLM orchestrator: Claude primary, GPT-4o fallback, schema validation, budget guard</span></li>
+          <li><span>07</span><span>Nightly eval harness on a 480-claim golden set with recall and citation accuracy</span></li>
+        </ol>
+      </div>
+
+      <div class="case-block">
+        <h4>Technologies</h4>
+        <div class="tag-row">
+          <span class="tag">TypeScript</span><span class="tag">React</span><span class="tag">NestJS</span>
+          <span class="tag">Python</span><span class="tag">PostgreSQL</span><span class="tag">pgvector</span>
+          <span class="tag">Redis</span><span class="tag">AWS S3 / ECS / SQS</span><span class="tag">Docker</span>
+          <span class="tag">Anthropic Claude</span><span class="tag">OpenAI</span>
+        </div>
+      </div>
+
+      <div class="case-cols">
+        <div class="case-block">
+          <h4>Key responsibilities</h4>
+          <ul class="case-list">
+            <li>Owned architecture and the ADRs for retrieval, citation and fallback strategy.</li>
+            <li>Set retrieval quality targets with the compliance lead and built the eval harness that measured them.</li>
+            <li>Designed tenant isolation, PII redaction and the audit trail required for sign-off.</li>
+            <li>Mentored two engineers on prompt evaluation and structured output validation.</li>
+          </ul>
+        </div>
+        <div class="case-block">
+          <h4>Challenges</h4>
+          <ul class="case-list is-challenge">
+            <li><strong>Scanned, 400-page PDFs:</strong> table extraction failed on 8% of documents; added layout-aware parsing plus a manual review queue.</li>
+            <li><strong>Hallucinated exclusions:</strong> fixed by refusing unsupported answers and measuring citation accuracy instead of fluency.</li>
+            <li><strong>Latency vs. quality:</strong> reranking cost 900ms; cached retrieval per policy version to keep p95 at 3.8s.</li>
+            <li><strong>Cost control:</strong> per-tenant token budgets and a cheaper model for routine extractions cut spend 31%.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="case-block">
+        <h4>Outcomes</h4>
+        <div class="case-metrics">
+          <div class="case-metric"><strong>45 → 17 min</strong><span>Average claim triage time</span></div>
+          <div class="case-metric"><strong>0.94</strong><span>Recall@10 on the golden set</span></div>
+          <div class="case-metric"><strong>94%</strong><span>Citation accuracy in the compliance audit</span></div>
+          <div class="case-metric"><strong>$0.11</strong><span>Average model cost per claim</span></div>
+        </div>
+      </div>
+    </template>
+
+    <template id="tpl-orbit">
+      <span class="badge">Commerce platform · B2B</span>
+      <h2 class="case-title">Orbit — B2B commerce rebuild</h2>
+      <p class="case-summary">
+        A nine-year-old Rails and Angular monolith served 1.8M orders a month, but every
+        release required a two-hour commerce freeze. We extracted the ordering domain
+        into services and rebuilt the storefront without pausing the business.
+      </p>
+      <dl class="case-meta">
+        <div><dt>Role</dt><dd>Technical lead, squad of 3</dd></div>
+        <div><dt>Timeline</dt><dd>14 months, 2020–2021</dd></div>
+        <div><dt>Team</dt><dd>3 engineers, 1 designer, 1 PM</dd></div>
+        <div><dt>Surface</dt><dd>Web storefront, admin, partner API</dd></div>
+      </dl>
+
+      <div class="case-block">
+        <h4>Business problem</h4>
+        <p>
+          B2B customers configured pricing and ordering through an eleven-step checkout
+          that took 28 seconds on a good connection. Pricing rules lived in stored
+          procedures that only two people understood, partner onboarding took six weeks
+          of engineering time, and releases were batched into overnight windows because
+          the monolith could not be deployed safely during trading hours.
+        </p>
+      </div>
+
+      <div class="case-block">
+        <h4>Solution</h4>
+        <p>
+          We used a strangler-fig migration: an API gateway routed traffic per route to
+          either the monolith or the new services, with shadow traffic and feature flags
+          controlling cutover. Catalog, pricing, cart, orders and partner integrations
+          became five NestJS services on PostgreSQL, with order lifecycle events on SQS.
+          A new React storefront used server-state caching, optimistic cart updates and
+          a checkout reduced to four steps with saved buyer profiles.
+        </p>
+      </div>
+
+      <div class="case-block">
+        <h4>Architecture</h4>
+        <ol class="arch-stack">
+          <li><span>01</span><span>React + TypeScript storefront with route-level code splitting</span></li>
+          <li><span>02</span><span>API gateway for auth, routing, rate limits and request tracing</span></li>
+          <li><span>03</span><span>Five NestJS domain services with transactional outbox to SQS</span></li>
+          <li><span>04</span><span>PostgreSQL per service with read replicas; Redis for pricing and cart cache</span></li>
+          <li><span>05</span><span>Partner API with scoped keys, idempotency and OpenAPI-generated clients</span></li>
+          <li><span>06</span><span>GitHub Actions pipeline with contract tests, canary deploys and auto-rollback</span></li>
+        </ol>
+      </div>
+
+      <div class="case-block">
+        <h4>Technologies</h4>
+        <div class="tag-row">
+          <span class="tag">React</span><span class="tag">TypeScript</span><span class="tag">NestJS</span>
+          <span class="tag">Node.js</span><span class="tag">PostgreSQL</span><span class="tag">Redis</span>
+          <span class="tag">AWS SQS / ECS</span><span class="tag">Docker</span><span class="tag">GitHub Actions</span>
+          <span class="tag">Datadog</span>
+        </div>
+      </div>
+
+      <div class="case-cols">
+        <div class="case-block">
+          <h4>Key responsibilities</h4>
+          <ul class="case-list">
+            <li>Sequenced the migration and wrote the API contracts shared by old and new systems.</li>
+            <li>Ran the cutover plan: traffic percentages, rollback criteria, and on-call coverage per release.</li>
+            <li>Set performance budgets for the storefront and enforced them in CI with Lighthouse CI.</li>
+            <li>Partnered with finance to encode pricing rules as versioned, testable configuration.</li>
+          </ul>
+        </div>
+        <div class="case-block">
+          <h4>Challenges</h4>
+          <ul class="case-list is-challenge">
+            <li><strong>Dual-write consistency:</strong> orders existed in both systems during migration; solved with an outbox plus reconciliation job, not distributed transactions.</li>
+            <li><strong>Pricing archaeology:</strong> 340 stored-procedure rules were reverse-engineered into 96 configurable rules with regression fixtures.</li>
+            <li><strong>Angular and React in parallel:</strong> shared design tokens and API clients kept both front ends consistent during the transition.</li>
+            <li><strong>No freezes:</strong> every service shipped behind a flag, so a bad deploy rolled back in under a minute.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="case-block">
+        <h4>Outcomes</h4>
+        <div class="case-metrics">
+          <div class="case-metric"><strong>28s → 6.8s</strong><span>End-to-end checkout time</span></div>
+          <div class="case-metric"><strong>+18%</strong><span>Checkout conversion</span></div>
+          <div class="case-metric"><strong>0</strong><span>Release freezes after month four</span></div>
+          <div class="case-metric"><strong>9 days</strong><span>Partner onboarding, down from 6 weeks</span></div>
+        </div>
+      </div>
+    </template>
+
+    <template id="tpl-signal">
+      <span class="badge">Data platform · Analytics</span>
+      <h2 class="case-title">Signal — Product analytics</h2>
+      <p class="case-summary">
+        An event pipeline and self-serve reporting layer that replaced weekly CSV exports
+        with near-real-time product metrics for 300 internal users.
+      </p>
+      <dl class="case-meta">
+        <div><dt>Role</dt><dd>Backend &amp; platform lead</dd></div>
+        <div><dt>Timeline</dt><dd>9 months, 2021</dd></div>
+        <div><dt>Team</dt><dd>2 engineers, 1 analyst, 1 PM</dd></div>
+        <div><dt>Surface</dt><dd>Ingestion SDK, query API, dashboards</dd></div>
+      </dl>
+
+      <div class="case-block">
+        <h4>Business problem</h4>
+        <p>
+          Product decisions relied on a weekly analyst export. By the time a funnel report
+          arrived it described behaviour from nine days earlier, and the definitions of
+          “active account” differed between three teams. As instrumentation grew, the
+          reporting queries stopped finishing at all — the largest funnel timed out after
+          twenty minutes.
+        </p>
+      </div>
+
+      <div class="case-block">
+        <h4>Solution</h4>
+        <p>
+          We defined a typed event schema with a governance process, shipped browser and
+          Node SDKs that validate before sending, and buffered ingestion through SQS into
+          batched Node workers writing to ClickHouse. A semantic layer holds metric
+          definitions in version control, so a dashboard and an API cannot disagree. A
+          React dashboard builder exposes dimensions and filters without exposing SQL.
+        </p>
+      </div>
+
+      <div class="case-block">
+        <h4>Architecture</h4>
+        <ol class="arch-stack">
+          <li><span>01</span><span>Browser / server SDKs with schema validation and offline retry</span></li>
+          <li><span>02</span><span>Ingestion API on Node.js, authenticated per workspace, writes to SQS</span></li>
+          <li><span>03</span><span>Worker fleet batching 5k events or 2s, with dedupe on event id</span></li>
+          <li><span>04</span><span>ClickHouse for event storage; PostgreSQL for metric definitions and permissions</span></li>
+          <li><span>05</span><span>Redis counters for live “today” metrics; nightly materialised rollups</span></li>
+          <li><span>06</span><span>React dashboard builder querying a typed metrics API, never raw SQL</span></li>
+        </ol>
+      </div>
+
+      <div class="case-block">
+        <h4>Technologies</h4>
+        <div class="tag-row">
+          <span class="tag">Node.js</span><span class="tag">TypeScript</span><span class="tag">ClickHouse</span>
+          <span class="tag">PostgreSQL</span><span class="tag">Redis</span><span class="tag">AWS SQS / ECS</span>
+          <span class="tag">React</span><span class="tag">Docker</span><span class="tag">OpenTelemetry</span>
+        </div>
+      </div>
+
+      <div class="case-cols">
+        <div class="case-block">
+          <h4>Key responsibilities</h4>
+          <ul class="case-list">
+            <li>Designed the event contract, SDK ergonomics and schema-evolution rules.</li>
+            <li>Owned query performance, storage cost and the 99.9% ingestion SLO.</li>
+            <li>Worked with the analyst to migrate 40 spreadsheet metrics into versioned definitions.</li>
+            <li>Ran the 14-month historical backfill with verification checkpoints.</li>
+          </ul>
+        </div>
+        <div class="case-block">
+          <h4>Challenges</h4>
+          <ul class="case-list is-challenge">
+            <li><strong>Duplicate and late events:</strong> idempotent writes on event id plus watermarks made rollups deterministic.</li>
+            <li><strong>Cardinality explosion:</strong> capped high-cardinality dimensions and added sampling for exploratory queries.</li>
+            <li><strong>Definition drift:</strong> a semantic layer with review ownership ended the “whose number is right?” debate.</li>
+            <li><strong>Cost:</strong> tiered retention (90 days hot, 2 years cold) held storage growth to 12% while volume tripled.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="case-block">
+        <h4>Outcomes</h4>
+        <div class="case-metrics">
+          <div class="case-metric"><strong>240M</strong><span>Events ingested per day</span></div>
+          <div class="case-metric"><strong>11s → 20min</strong><span>p95 funnel query, now vs. before</span></div>
+          <div class="case-metric"><strong>300</strong><span>Weekly active internal users</span></div>
+          <div class="case-metric"><strong>82%</strong><span>Drop in manually exported CSVs</span></div>
+        </div>
+      </div>
+    </template>
+
+    <template id="tpl-ledger">
+      <span class="badge">Integrations · Payments</span>
+      <h2 class="case-title">Ledger — Payments integration hub</h2>
+      <p class="case-summary">
+        Eleven payment providers, each integrated ad hoc over four years, unified behind
+        one adapter contract with idempotent webhooks and automated reconciliation for
+        $46M of monthly volume.
+      </p>
+      <dl class="case-meta">
+        <div><dt>Role</dt><dd>Lead engineer</dd></div>
+        <div><dt>Timeline</dt><dd>8 months, 2022–2023</dd></div>
+        <div><dt>Team</dt><dd>3 engineers, finance ops, compliance</dd></div>
+        <div><dt>Surface</dt><dd>Payments API, webhook inbox, ops console</dd></div>
+      </dl>
+
+      <div class="case-block">
+        <h4>Business problem</h4>
+        <p>
+          Each provider had its own integration, retry behaviour and data shape. Failed
+          webhooks meant payments silently stalled, and finance reconciled settlements in
+          spreadsheets. Locating a single settlement mismatch took three days on average,
+          and a duplicate capture incident cost the company $18,000 in refunds.
+        </p>
+      </div>
+
+      <div class="case-block">
+        <h4>Solution</h4>
+        <p>
+          The hub normalises every provider into one payment state machine with explicit
+          transitions and idempotency keys. Inbound webhooks land in a durable inbox and
+          are processed asynchronously, so a provider retry can never create a second
+          charge and any event can be replayed. A reconciliation worker compares provider
+          settlements against internal ledger entries daily, opening an exception with a
+          full trace instead of an email thread.
+        </p>
+      </div>
+
+      <div class="case-block">
+        <h4>Architecture</h4>
+        <ol class="arch-stack">
+          <li><span>01</span><span>Provider adapters implementing a shared contract (charge, refund, capture, payout)</span></li>
+          <li><span>02</span><span>NestJS hub service with an idempotent command API and state machine</span></li>
+          <li><span>03</span><span>Durable webhook inbox with signature verification, replay and dead-letter queue</span></li>
+          <li><span>04</span><span>PostgreSQL ledger with double-entry rows and immutable audit events</span></li>
+          <li><span>05</span><span>Laravel services retained for legacy provider adapters, called over internal HTTP</span></li>
+          <li><span>06</span><span>Daily reconciliation worker and an ops console for exceptions</span></li>
+        </ol>
+      </div>
+
+      <div class="case-block">
+        <h4>Technologies</h4>
+        <div class="tag-row">
+          <span class="tag">NestJS</span><span class="tag">TypeScript</span><span class="tag">Laravel / PHP</span>
+          <span class="tag">PostgreSQL</span><span class="tag">Redis</span><span class="tag">AWS SQS / ECS</span>
+          <span class="tag">Docker</span><span class="tag">Stripe</span><span class="tag">Adyen</span>
+          <span class="tag">PayPal</span>
+        </div>
+      </div>
+
+      <div class="case-cols">
+        <div class="case-block">
+          <h4>Key responsibilities</h4>
+          <ul class="case-list">
+            <li>Defined the adapter contract and the canonical payment state machine.</li>
+            <li>Designed idempotency and replay so retries and backfills were safe by construction.</li>
+            <li>Worked with finance to encode reconciliation rules and variance thresholds.</li>
+            <li>Wrote the runbooks for webhook storms and provider outages.</li>
+          </ul>
+        </div>
+        <div class="case-block">
+          <h4>Challenges</h4>
+          <ul class="case-list is-challenge">
+            <li><strong>Four money representations:</strong> minor units, decimals and a provider float bug; normalised at the adapter boundary with exact decimal arithmetic.</li>
+            <li><strong>Settlement cutoffs:</strong> providers settle in different timezones; reconciliation windows are explicit per provider, not assumed.</li>
+            <li><strong>Historical replay:</strong> 90 days of webhook history reprocessed with zero duplicate charges.</li>
+            <li><strong>PCI scope:</strong> tokenised fields only, no card data in our systems, reviewed with compliance before build.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="case-block">
+        <h4>Outcomes</h4>
+        <div class="case-metrics">
+          <div class="case-metric"><strong>0.02%</strong><span>Reconciliation variance, from 1.4%</span></div>
+          <div class="case-metric"><strong>99.99%</strong><span>Webhook processing success</span></div>
+          <div class="case-metric"><strong>20 min</strong><span>To trace a mismatch, from 3 days</span></div>
+          <div class="case-metric"><strong>$46M</strong><span>Monthly volume on the hub</span></div>
+        </div>
+      </div>
+    </template>
+
+    <template id="tpl-compass">
+      <span class="badge">Frontend platform · Design system</span>
+      <h2 class="case-title">Compass — Design system</h2>
+      <p class="case-summary">
+        Six design systems and three component libraries across 34 front-end apps became
+        one token-driven library — served to both React and Angular teams, with
+        accessibility enforced in CI rather than in audits.
+      </p>
+      <dl class="case-meta">
+        <div><dt>Role</dt><dd>Frontend platform lead</dd></div>
+        <div><dt>Timeline</dt><dd>11 months, 2021–2022</dd></div>
+        <div><dt>Team</dt><dd>2 engineers, 1 designer, 9 consuming teams</dd></div>
+        <div><dt>Surface</dt><dd>Component library, docs, CI tooling</dd></div>
+      </dl>
+
+      <div class="case-block">
+        <h4>Business problem</h4>
+        <p>
+          Every product team rebuilt the same button. Visual inconsistencies were visible
+          to customers, an accessibility audit failed 41 WCAG criteria across 28 flows,
+          and onboarding a designer meant learning which of six systems a screen used.
+          Front-end feature work was slow because shared behaviour was copy-pasted rather
+          than owned.
+        </p>
+      </div>
+
+      <div class="case-block">
+        <h4>Solution</h4>
+        <p>
+          Compass is a monorepo of design tokens, 120 components and framework wrappers
+          for React and Angular, documented in Storybook with usage rules and do/don’t
+          examples. Tokens are CSS custom properties, so theming (including dark mode)
+          costs nothing at runtime. CI runs axe-core, visual regression and bundle-size
+          budgets on every pull request, and codemods moved nine apps off the old
+          libraries in a quarter.
+        </p>
+      </div>
+
+      <div class="case-block">
+        <h4>Architecture</h4>
+        <ol class="arch-stack">
+          <li><span>01</span><span>Design token source (JSON) compiled to CSS custom properties and TS types</span></li>
+          <li><span>02</span><span>Headless primitives in TypeScript with framework-agnostic behaviour</span></li>
+          <li><span>03</span><span>Thin React and Angular wrappers sharing the same accessibility contract</span></li>
+          <li><span>04</span><span>Storybook documentation with interaction tests and a11y reports</span></li>
+          <li><span>05</span><span>GitHub Actions pipeline: type check, axe-core, Playwright visual diffs, size budgets</span></li>
+          <li><span>06</span><span>Adoption dashboard tracking imports per app and deprecated component usage</span></li>
+        </ol>
+      </div>
+
+      <div class="case-block">
+        <h4>Technologies</h4>
+        <div class="tag-row">
+          <span class="tag">React</span><span class="tag">Angular</span><span class="tag">TypeScript</span>
+          <span class="tag">CSS custom properties</span><span class="tag">Storybook</span>
+          <span class="tag">Playwright</span><span class="tag">axe-core</span><span class="tag">GitHub Actions</span>
+        </div>
+      </div>
+
+      <div class="case-cols">
+        <div class="case-block">
+          <h4>Key responsibilities</h4>
+          <ul class="case-list">
+            <li>Owned token architecture, component API conventions and the contribution model.</li>
+            <li>Ran accessibility training for 40 engineers and designers.</li>
+            <li>Planned adoption app by app, with codemods and a deprecation path instead of a big-bang migration.</li>
+            <li>Reported adoption, bundle size and a11y status to engineering leadership monthly.</li>
+          </ul>
+        </div>
+        <div class="case-block">
+          <h4>Challenges</h4>
+          <ul class="case-list is-challenge">
+            <li><strong>Two frameworks:</strong> duplicating components would drift, so behaviour lives in headless primitives.</li>
+            <li><strong>Theming cost:</strong> runtime CSS-in-JS increased bundle size; CSS variables removed 22% of shipped CSS.</li>
+            <li><strong>Breaking changes:</strong> semver plus non-optional codemods kept 34 apps moving without a freeze.</li>
+            <li><strong>Trust:</strong> a public roadmap and consuming-team office hours prevented a shadow library from reappearing.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="case-block">
+        <h4>Outcomes</h4>
+        <div class="case-metrics">
+          <div class="case-metric"><strong>34</strong><span>Apps on one component library</span></div>
+          <div class="case-metric"><strong>WCAG 2.1 AA</strong><span>Across 28 audited flows</span></div>
+          <div class="case-metric"><strong>38%</strong><span>Faster UI feature delivery</span></div>
+          <div class="case-metric"><strong>-22%</strong><span>CSS bundle size after token migration</span></div>
+        </div>
+      </div>
+    </template>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="index.html" aria-label="Alex Morgan — overview">
+          <span class="brand-mark" aria-hidden="true" data-bind="identity.initials">AM</span>
+          <span class="brand-text"><span data-bind="identity.brand.first">alex</span><span class="brand-dot">.</span><span data-bind="identity.brand.last">morgan</span></span>
+        </a>
+        <p>Senior software engineer building full-stack platforms, systems and AI products. Seattle, Washington.</p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="experience.html">Experience</a>
+        <a href="projects.html">Projects</a>
+        <a href="expertise.html">Expertise</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="footer-meta">
+        <a href="mailto:alex@alexmorgan.dev" data-bind-href="identity.mailto" data-bind="identity.email">alex@alexmorgan.dev</a>
+        <a href="https://www.linkedin.com/in/alexmorgan-dev" data-bind-href="social.linkedin.url" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/alexmorgan-dev" data-bind-href="social.github.url" rel="noopener">GitHub</a>
+        <p class="footer-note">© <span data-year>2025</span> <span data-bind="identity.name">Alex Morgan</span> · Static portfolio, no tracking.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="toast" role="status" aria-live="polite" data-toast hidden></div>
+  <script src="app.js" defer></script>
+</body>
+</html>

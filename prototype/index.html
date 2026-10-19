@@ -1,0 +1,381 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Alex Morgan — Senior Software Engineer</title>
+  <meta name="description" content="Alex Morgan is a senior software engineer with 9+ years of experience building full-stack platforms, distributed systems and AI-powered products for fintech, commerce and insurance teams." />
+  <meta name="color-scheme" content="dark light" />
+  <meta name="theme-color" content="#070a0f" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Alex Morgan — Senior Software Engineer" />
+  <meta property="og:description" content="9+ years shipping full-stack platforms, system design and production AI. Portfolio, case studies and architecture work." />
+  <link rel="stylesheet" href="styles.css" />
+  <script>
+    /* Apply the saved (or system) theme before first paint to avoid a flash. */
+    (function () {
+      try {
+        document.documentElement.classList.add('js');
+        var saved = localStorage.getItem('am-theme');
+        var light = window.matchMedia('(prefers-color-scheme: light)').matches;
+        document.documentElement.dataset.theme = saved || (light ? 'light' : 'dark');
+      } catch (e) { /* private mode: keep the dark default */ }
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" data-header>
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Alex Morgan — overview">
+        <span class="brand-mark" aria-hidden="true">AM</span>
+        <span class="brand-text">alex<span class="brand-dot">.</span>morgan</span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <a href="index.html" aria-current="page">Overview</a>
+        <a href="experience.html">Experience</a>
+        <a href="projects.html">Projects</a>
+        <a href="expertise.html">Expertise</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-btn theme-toggle" type="button" data-theme-toggle aria-label="Switch to light theme" title="Switch theme">
+          <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.6v2.2M12 19.2v2.2M2.6 12h2.2M19.2 12h2.2M5.4 5.4l1.6 1.6M17 17l1.6 1.6M18.6 5.4L17 7M7 17l-1.6 1.6"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20.4 14.6A8.6 8.6 0 0 1 9.4 3.6a8.6 8.6 0 1 0 11 11Z"/></svg>
+        </button>
+        <a class="btn btn-sm btn-ghost header-resume" href="contact.html#resume">Résumé</a>
+        <button class="icon-btn nav-toggle" type="button" aria-expanded="false" aria-controls="mobileNav" aria-label="Open menu" data-nav-toggle>
+          <span class="burger" aria-hidden="true"><span></span><span></span></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-nav" id="mobileNav" hidden>
+      <nav class="container mobile-nav-inner" aria-label="Mobile">
+        <a href="index.html" aria-current="page">Overview</a>
+        <a href="experience.html">Experience</a>
+        <a href="projects.html">Projects</a>
+        <a href="expertise.html">Expertise</a>
+        <a href="contact.html">Contact</a>
+        <a class="btn btn-primary btn-block" href="contact.html#resume">Download résumé</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============================ HERO ============================ -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="pulse" aria-hidden="true"></span> Available for senior &amp; staff engineering roles</p>
+
+          <h1 id="hero-title">Alex Morgan</h1>
+          <p class="hero-role">Senior Software Engineer <span class="sep" aria-hidden="true">/</span> Full-Stack &amp; AI Platforms</p>
+
+          <p class="lead">
+            Nine years of shipping software that has to work on a Tuesday morning at
+            scale. I lead full-stack teams, design systems that stay maintainable after
+            the third integration, and take LLM features from a prototype notebook to
+            production with the evaluation, observability and cost controls they need.
+          </p>
+
+          <ul class="strengths" aria-label="Key technical strengths">
+            <li>React &amp; TypeScript</li>
+            <li>Node.js &amp; NestJS</li>
+            <li>System design</li>
+            <li>AI / LLM &amp; RAG</li>
+            <li>Cloud &amp; CI/CD</li>
+          </ul>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="projects.html">
+              View My Work
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h13M13 6l6 6-6 6"/></svg>
+            </a>
+            <a class="btn btn-ghost" href="contact.html">Contact Me</a>
+          </div>
+
+          <div class="hero-socials">
+            <a class="social-link" href="https://github.com/alexmorgan-dev" rel="noopener">
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.9a3.4 3.4 0 0 0-1-2.6c3.3-.4 5.5-1.6 5.5-6a4.7 4.7 0 0 0-1.3-3.2 4.3 4.3 0 0 0-.1-3.2s-1.2-.4-3.6 1.3a12.4 12.4 0 0 0-6.4 0C5.6 1.7 4.4 2.1 4.4 2.1a4.3 4.3 0 0 0-.1 3.2A4.7 4.7 0 0 0 3 8.5c0 4.4 2.2 5.6 5.5 6a3.4 3.4 0 0 0-1 2.6V21"/></svg>
+              GitHub
+            </a>
+            <a class="social-link" href="https://www.linkedin.com/in/alexmorgan-dev" rel="noopener">
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M7.5 10.5V17M7.5 7.4v.1M11.5 17v-3.7a2.3 2.3 0 0 1 4.6 0V17"/></svg>
+              LinkedIn
+            </a>
+            <a class="social-link" href="mailto:alex@alexmorgan.dev">
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="m3.8 6.5 8.2 6 8.2-6"/></svg>
+              Email
+            </a>
+            <a class="social-link" href="contact.html#resume">
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 3v12m0 0 4.5-4.5M12 15l-4.5-4.5M4 20h16"/></svg>
+              Résumé
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="panel-glow"></div>
+
+          <div class="code-card reveal" data-reveal>
+            <div class="code-head">
+              <span class="dots"><i></i><i></i><i></i></span>
+              <span class="code-file">engineer.ts</span>
+              <span class="code-badge">TS 5.4</span>
+            </div>
+            <pre class="code-body"><code><span class="c-key">export const</span> <span class="c-name">engineer</span> = {
+  name: <span class="c-str">"Alex Morgan"</span>,
+  role: <span class="c-str">"Senior Software Engineer"</span>,
+  years: <span class="c-num">9</span>,
+  focus: [<span class="c-str">"full-stack"</span>, <span class="c-str">"system design"</span>, <span class="c-str">"AI"</span>],
+  stack: {
+    frontend: [<span class="c-str">"React"</span>, <span class="c-str">"Angular"</span>, <span class="c-str">"TypeScript"</span>],
+    backend:  [<span class="c-str">"Node.js"</span>, <span class="c-str">"NestJS"</span>, <span class="c-str">"Python"</span>],
+    data:     [<span class="c-str">"PostgreSQL"</span>, <span class="c-str">"pgvector"</span>, <span class="c-str">"Redis"</span>],
+  },
+  shipping: <span class="c-bool">true</span>,
+};</code></pre>
+            <div class="code-foot">
+              <span class="status-dot"></span>
+              <span>All systems operational</span>
+              <span class="code-foot-meta">p95 320ms</span>
+            </div>
+          </div>
+
+          <div class="float-card float-card-a">
+            <span class="float-label">Recall@10</span>
+            <strong>0.94</strong>
+            <span class="float-bar"><span></span></span>
+            <span class="float-note">RAG eval, claims corpus</span>
+          </div>
+
+          <div class="float-card float-card-b">
+            <span class="float-label">Since 2016</span>
+            <strong>9+ yrs</strong>
+            <span class="float-note">6 engineers mentored</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="hero-stats">
+          <div class="stat"><span class="stat-value">9+</span><span class="stat-label">Years in production engineering</span></div>
+          <div class="stat"><span class="stat-value">40+</span><span class="stat-label">Product releases shipped</span></div>
+          <div class="stat"><span class="stat-value">1.2M</span><span class="stat-label">Monthly active users served</span></div>
+          <div class="stat"><span class="stat-value">99.98%</span><span class="stat-label">Uptime across owned services</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ TECH BAND ============================ -->
+    <section class="tech-band" aria-label="Core technologies">
+      <div class="container tech-band-inner">
+        <p class="tech-band-label">Daily stack</p>
+        <ul class="tech-band-list">
+          <li>TypeScript</li><li>React</li><li>Angular</li><li>Node.js</li><li>NestJS</li>
+          <li>Python</li><li>PHP / Laravel</li><li>PostgreSQL</li><li>Docker</li><li>AWS</li>
+          <li>LLM &amp; RAG</li><li>CI/CD</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============================ ABOUT ============================ -->
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container about-grid">
+        <div class="about-portrait reveal" data-reveal>
+          <div class="portrait-tile">
+            <span class="portrait-mono">AM</span>
+            <span class="portrait-scan" aria-hidden="true"></span>
+          </div>
+          <div class="portrait-meta">
+            <span class="badge badge-live"><span class="pulse"></span> Seattle, WA · Remote-friendly</span>
+            <span class="portrait-role">Senior Software Engineer · Platform &amp; AI</span>
+          </div>
+        </div>
+
+        <div class="about-copy">
+          <p class="kicker">About me</p>
+          <h2 id="about-title" class="h2 reveal" data-reveal>Engineering that survives contact with production.</h2>
+          <div class="reveal" data-reveal>
+            <p>
+              I started in 2016 building Laravel and Angular applications for logistics
+              customers, moved into React and Node platform work, and now spend most of my
+              time on the hardest part of the job: making many systems — APIs, queues,
+              third-party integrators and, increasingly, language models — behave like one
+              reliable product.
+            </p>
+            <p>
+              As a senior engineer I still write code every day, but my leverage is in
+              decisions. Scope decomposition, API contracts, failure modes, migration
+              plans, and the review culture that keeps a codebase cheap to change. I have
+              led teams of up to six engineers and worked directly with product, design and
+              compliance stakeholders to ship regulated features on schedule.
+            </p>
+          </div>
+
+          <dl class="facts reveal" data-reveal>
+            <div><dt>Currently</dt><dd>Staff Engineer, Meridian Labs (fintech)</dd></div>
+            <div><dt>Focus</dt><dd>Platform architecture, full-stack delivery, AI systems</dd></div>
+            <div><dt>Leading</dt><dd>6 engineers across frontend &amp; services</dd></div>
+            <div><dt>Open to</dt><dd>Senior / Staff / Lead Engineer roles</dd></div>
+          </dl>
+
+          <div class="about-links reveal" data-reveal>
+            <a class="text-link" href="experience.html">Full experience &amp; skills
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h13M13 6l6 6-6 6"/></svg>
+            </a>
+            <a class="text-link" href="expertise.html">AI &amp; architecture work
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h13M13 6l6 6-6 6"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ SELECTED WORK ============================ -->
+    <section class="section section-alt" id="work" aria-labelledby="work-title">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="kicker">Selected work</p>
+            <h2 id="work-title" class="h2">Three products, three kinds of hard.</h2>
+          </div>
+          <a class="text-link" href="projects.html">All case studies
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h13M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+
+        <div class="work-grid">
+          <article class="work-card reveal" data-reveal>
+            <div class="work-thumb thumb-atlas" aria-hidden="true">
+              <span class="thumb-grid"></span>
+              <span class="thumb-chips"><span class="thumb-chip">RAG</span><span class="thumb-chip">12 sources</span></span>
+            </div>
+            <div class="work-body">
+              <span class="badge">AI platform</span>
+              <h3><a href="projects.html#atlas">Atlas — Claims intelligence</a></h3>
+              <p>Turned 40-page policy documents into structured claim evidence with a retrieval pipeline engineers can actually debug.</p>
+              <ul class="work-metrics">
+                <li><strong>62%</strong> faster triage</li>
+                <li><strong>0.94</strong> recall@10</li>
+              </ul>
+              <span class="work-stack">NestJS · pgvector · React · Claude</span>
+              <a class="card-cta" href="projects.html#atlas">Read case study <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+
+          <article class="work-card reveal" data-reveal>
+            <div class="work-thumb thumb-orbit" aria-hidden="true">
+              <span class="thumb-grid"></span>
+              <span class="thumb-chips"><span class="thumb-chip">GraphQL</span><span class="thumb-chip">p95 380ms</span></span>
+            </div>
+            <div class="work-body">
+              <span class="badge">Commerce platform</span>
+              <h3><a href="projects.html#orbit">Orbit — B2B commerce rebuild</a></h3>
+              <p>Re-platformed a monolith serving 1.8M orders a month onto NestJS services and a React storefront without pausing the business.</p>
+              <ul class="work-metrics">
+                <li><strong>4.1×</strong> faster checkout</li>
+                <li><strong>0</strong> release freezes</li>
+              </ul>
+              <span class="work-stack">React · NestJS · PostgreSQL · Docker</span>
+              <a class="card-cta" href="projects.html#orbit">Read case study <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+
+          <article class="work-card reveal" data-reveal>
+            <div class="work-thumb thumb-signal" aria-hidden="true">
+              <span class="thumb-grid"></span>
+              <span class="thumb-chips"><span class="thumb-chip">Streaming</span><span class="thumb-chip">240M/day</span></span>
+            </div>
+            <div class="work-body">
+              <span class="badge">Data platform</span>
+              <h3><a href="projects.html#signal">Signal — Product analytics</a></h3>
+              <p>An event pipeline and self-serve reporting layer that replaced a spreadsheet habit for 300 internal users.</p>
+              <ul class="work-metrics">
+                <li><strong>240M</strong> events/day</li>
+                <li><strong>11s</strong> query p95</li>
+              </ul>
+              <span class="work-stack">Node.js · ClickHouse · Redis · AWS</span>
+              <a class="card-cta" href="projects.html#signal">Read case study <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ AI BAND ============================ -->
+    <section class="section" id="ai" aria-labelledby="ai-title">
+      <div class="container ai-band">
+        <div class="ai-copy reveal" data-reveal>
+          <p class="kicker">AI engineering</p>
+          <h2 id="ai-title" class="h2">AI features, with the engineering around them.</h2>
+          <p>
+            I have shipped four production AI systems since 2023 — two retrieval-heavy
+            assistants, a document extraction pipeline and an agentic workflow tool. The
+            interesting part was never the prompt. It was evaluation harnesses, token
+            budgets, fallbacks, tenancy boundaries and knowing when <em>not</em> to call a
+            model.
+          </p>
+          <a class="btn btn-ghost" href="expertise.html">Explore AI &amp; architecture</a>
+        </div>
+
+        <ol class="ai-list reveal" data-reveal>
+          <li><span class="ai-num">01</span><div><h3>RAG pipelines</h3><p>Chunking, hybrid retrieval, pgvector + BM25, reranking and citation-grounded answers.</p></div></li>
+          <li><span class="ai-num">02</span><div><h3>LLM integration</h3><p>Multi-model routing, structured output validation, retries, caching and streaming UX.</p></div></li>
+          <li><span class="ai-num">03</span><div><h3>Evaluation &amp; cost</h3><p>Golden sets, recall/precision tracking, per-tenant budgets and latency SLOs.</p></div></li>
+          <li><span class="ai-num">04</span><div><h3>AI-assisted delivery</h3><p>Code review agents and prompt libraries that cut routine PR cycle time by a third.</p></div></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============================ CTA ============================ -->
+    <section class="section cta-section" aria-labelledby="cta-title">
+      <div class="container">
+        <div class="cta-card reveal" data-reveal>
+          <div class="cta-glow" aria-hidden="true"></div>
+          <p class="kicker">Next role</p>
+          <h2 id="cta-title" class="h2">Let’s build something that holds up in production.</h2>
+          <p class="cta-sub">I’m interviewing for senior, staff and lead engineering roles on teams building real products — especially where full-stack delivery meets AI.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="contact.html">Start a conversation</a>
+            <a class="btn btn-ghost" href="contact.html#resume">Download résumé</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="index.html" aria-label="Alex Morgan — overview">
+          <span class="brand-mark" aria-hidden="true">AM</span>
+          <span class="brand-text">alex<span class="brand-dot">.</span>morgan</span>
+        </a>
+        <p>Senior software engineer building full-stack platforms, systems and AI products. Seattle, Washington.</p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="experience.html">Experience</a>
+        <a href="projects.html">Projects</a>
+        <a href="expertise.html">Expertise</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="footer-meta">
+        <a href="mailto:alex@alexmorgan.dev">alex@alexmorgan.dev</a>
+        <a href="https://www.linkedin.com/in/alexmorgan-dev" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/alexmorgan-dev" rel="noopener">GitHub</a>
+        <p class="footer-note">© <span data-year>2025</span> Alex Morgan · Static prototype, no tracking.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="toast" role="status" aria-live="polite" data-toast hidden></div>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
