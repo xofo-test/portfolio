@@ -1,0 +1,5 @@
+# https://alexmorgan.dev
+User-agent: *
+Allow: /
+
+Sitemap: https://alexmorgan.dev/sitemap.xml

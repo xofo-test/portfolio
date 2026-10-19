@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Résumé — Alex Morgan, Senior Software Engineer</title>
+  <meta name="description" content="Print-ready one-page résumé for Alex Morgan, a senior software engineer with 9+ years building full-stack platforms, distributed systems and production AI." />
+  <meta name="color-scheme" content="dark light" />
+  <meta name="theme-color" content="#070a0f" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Résumé — Alex Morgan, Senior Software Engineer" />
+  <meta property="og:description" content="Print-ready one-page résumé: experience, skills, education and certifications." />
+  <meta property="og:url" content="https://alexmorgan.dev/resume.html" />
+  <meta property="og:image" content="https://alexmorgan.dev/assets/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Résumé — Alex Morgan, Senior Software Engineer" />
+  <meta name="twitter:description" content="Print-ready one-page résumé: experience, skills, education and certifications." />
+  <link rel="canonical" href="https://alexmorgan.dev/resume.html" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;1,8..60,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script>
+    (function () {
+      document.documentElement.classList.add('js');
+      try {
+        var saved = localStorage.getItem('am-theme');
+        var light = window.matchMedia('(prefers-color-scheme: light)').matches;
+        document.documentElement.dataset.theme = saved || (light ? 'light' : 'dark');
+      } catch (e) { /* keep default */ }
+    })();
+  </script>
+  <script src="js/data.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" data-header>
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Alex Morgan — overview">
+        <span class="brand-mark" aria-hidden="true" data-bind="identity.initials">AM</span>
+        <span class="brand-text"><span data-bind="identity.brand.first">alex</span><span class="brand-dot">.</span><span data-bind="identity.brand.last">morgan</span></span>
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <a href="index.html">Overview</a>
+        <a href="experience.html">Experience</a>
+        <a href="projects.html">Projects</a>
+        <a href="expertise.html">Expertise</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-btn theme-toggle" type="button" data-theme-toggle aria-label="Switch to light theme" title="Switch theme">
+          <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.6v2.2M12 19.2v2.2M2.6 12h2.2M19.2 12h2.2M5.4 5.4l1.6 1.6M17 17l1.6 1.6M18.6 5.4L17 7M7 17l-1.6 1.6"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20.4 14.6A8.6 8.6 0 0 1 9.4 3.6a8.6 8.6 0 1 0 11 11Z"/></svg>
+        </button>
+        <a class="btn btn-sm btn-ghost header-resume" href="resume.html" aria-current="page">Résumé</a>
+        <button class="icon-btn nav-toggle" type="button" aria-expanded="false" aria-controls="mobileNav" aria-label="Open menu" data-nav-toggle>
+          <span class="burger" aria-hidden="true"><span></span><span></span></span>
+        </button>
+      </div>
+    </div>
+    <div class="mobile-nav" id="mobileNav" hidden>
+      <nav class="container mobile-nav-inner" aria-label="Mobile">
+        <a href="index.html">Overview</a>
+        <a href="experience.html">Experience</a>
+        <a href="projects.html">Projects</a>
+        <a href="expertise.html">Expertise</a>
+        <a href="contact.html">Contact</a>
+        <a class="btn btn-primary btn-block" href="resume.html">Download résumé</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="section section-alt resume-section" id="resume" aria-labelledby="resume-title">
+      <div class="container">
+        <div class="resume-card">
+          <div class="resume-bar no-print">
+            <div>
+              <h2 id="resume-title">Résumé</h2>
+              <p>Print-ready, one page. Use the print dialog to save it as a PDF.</p>
+            </div>
+            <div class="hero-actions">
+              <button class="btn btn-primary btn-sm" type="button" data-print>
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 9V4h10v5M7 18H5a2 2 0 0 1-2-2v-4a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2h-2"/><rect x="7" y="14" width="10" height="6" rx="1"/></svg>
+                Print / Save as PDF
+              </button>
+              <a class="btn btn-ghost btn-sm" href="index.html">Back to portfolio</a>
+            </div>
+          </div>
+
+          <div class="resume-head">
+            <div>
+              <p class="resume-name" data-bind="identity.name">Alex Morgan</p>
+              <p class="resume-title"><span data-bind="identity.role">Senior Software Engineer</span> · <span data-bind="identity.subrole">Full-Stack &amp; AI Platforms</span></p>
+            </div>
+            <div class="resume-contact">
+              <span><span data-bind="identity.location">Seattle, WA</span> · Remote-friendly</span>
+              <span><a href="mailto:alex@alexmorgan.dev" data-bind-href="identity.mailto" data-bind="identity.email">alex@alexmorgan.dev</a></span>
+              <span><span data-bind="social.linkedin.handle">linkedin.com/in/alexmorgan-dev</span> · <span data-bind="social.github.handle">github.com/alexmorgan-dev</span></span>
+            </div>
+          </div>
+
+          <div class="resume-body">
+            <div class="resume-block">
+              <h3>Summary</h3>
+              <p>
+                Senior software engineer with 9+ years building production web platforms,
+                distributed services and AI-powered products. Led the migration of a
+                regulated payments platform to NestJS services with zero downtime, and
+                shipped four LLM systems with evaluation and cost controls. Comfortable
+                owning architecture while staying hands-on in code.
+              </p>
+            </div>
+
+            <div class="resume-block">
+              <h3>Core skills</h3>
+              <p>
+                TypeScript, JavaScript, Python, PHP · React, Angular, Node.js, NestJS,
+                Laravel · PostgreSQL, pgvector, Redis, ClickHouse · Docker, AWS, GCP,
+                GitHub Actions · LLM integration, RAG, prompt evaluation, AI agents.
+              </p>
+            </div>
+
+            <div class="resume-block">
+              <h3>Experience</h3>
+
+              <div class="resume-item">
+                <div class="resume-role"><strong>Staff Engineer — Meridian Labs</strong><span>Mar 2022 – Present</span></div>
+                <p class="resume-company">Seattle, WA · Treasury and payments platform</p>
+                <ul class="case-list">
+                  <li>Own architecture for the payments ledger, reporting API and React console used by 8,000 finance teams.</li>
+                  <li>Extracted 32 endpoints from a Rails monolith into NestJS services across 14 releases without customer-facing downtime.</li>
+                  <li>Cut ledger query p95 from 1.9s to 320ms; introduced the Atlas RAG assistant used weekly by 240 support agents.</li>
+                  <li>Mentor six engineers; chair architecture reviews and own incident retrospectives.</li>
+                </ul>
+              </div>
+
+              <div class="resume-item">
+                <div class="resume-role"><strong>Senior Full-Stack Engineer — Helix Commerce</strong><span>Jun 2019 – Feb 2022</span></div>
+                <p class="resume-company">Seattle, WA · B2B commerce platform</p>
+                <ul class="case-list">
+                  <li>Led a three-engineer squad rebuilding checkout: 28s to 6.8s, conversion up 18%, 1.8M orders/month.</li>
+                  <li>Designed the partner API with scoped keys and rate limits; onboarding went from six weeks to nine days.</li>
+                  <li>Built the analytics pipeline ingesting 240M events/day into ClickHouse for 300 internal users.</li>
+                </ul>
+              </div>
+
+              <div class="resume-item">
+                <div class="resume-role"><strong>Software Engineer — Aperture Systems</strong><span>Aug 2017 – May 2019</span></div>
+                <p class="resume-company">Portland, OR · Logistics SaaS</p>
+                <ul class="case-list">
+                  <li>Shipped the Laravel tracking API and customer portal for 1,400 shippers.</li>
+                  <li>Integrated 11 carrier APIs; failed status syncs fell 87%.</li>
+                </ul>
+              </div>
+
+              <div class="resume-item">
+                <div class="resume-role"><strong>Full-Stack Developer — Blue Harbor Digital</strong><span>Mar 2016 – Jul 2017</span></div>
+                <p class="resume-company">Portland, OR · Product studio</p>
+                <ul class="case-list">
+                  <li>Delivered 18 client applications in Laravel, Angular and JavaScript.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="resume-cols">
+              <div class="resume-block">
+                <h3>Education</h3>
+                <p><strong>B.S. Computer Science</strong><br />University of Washington · 2016</p>
+                <p class="hint">Coursework in distributed systems, databases and human–computer interaction.</p>
+              </div>
+              <div class="resume-block">
+                <h3>Certifications</h3>
+                <ul class="case-list">
+                  <li>AWS Certified Solutions Architect — Professional (2023)</li>
+                  <li>Google Cloud Professional Cloud Architect (2022)</li>
+                  <li>Certified Kubernetes Application Developer (2021)</li>
+                  <li>DeepLearning.AI — Generative AI with LLMs (2024)</li>
+                </ul>
+              </div>
+            </div>
+
+            <p class="resume-note">
+              This résumé is a print-friendly view of the portfolio content. Use the
+              print dialog to save a PDF — no file is downloaded directly.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="index.html" aria-label="Alex Morgan — overview">
+          <span class="brand-mark" aria-hidden="true" data-bind="identity.initials">AM</span>
+          <span class="brand-text"><span data-bind="identity.brand.first">alex</span><span class="brand-dot">.</span><span data-bind="identity.brand.last">morgan</span></span>
+        </a>
+        <p>Senior software engineer building full-stack platforms, systems and AI products. Seattle, Washington.</p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="experience.html">Experience</a>
+        <a href="projects.html">Projects</a>
+        <a href="expertise.html">Expertise</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="footer-meta">
+        <a href="mailto:alex@alexmorgan.dev" data-bind-href="identity.mailto" data-bind="identity.email">alex@alexmorgan.dev</a>
+        <a href="https://www.linkedin.com/in/alexmorgan-dev" data-bind-href="social.linkedin.url" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/alexmorgan-dev" data-bind-href="social.github.url" rel="noopener">GitHub</a>
+        <p class="footer-note">© <span data-year>2025</span> <span data-bind="identity.name">Alex Morgan</span> · Static portfolio, no tracking.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="toast" role="status" aria-live="polite" data-toast hidden></div>
+  <script src="app.js" defer></script>
+</body>
+</html>
