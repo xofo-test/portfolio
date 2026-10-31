@@ -1599,6 +1599,8 @@ html[data-theme="light"] .icon-moon { display: none; }
   .nav { display: none; }
   .nav-toggle { display: grid; }
   .header-resume { display: none; }
+  /* Keep the page-head circle clear of the headline at tablet widths. */
+  .page-head .deco-page { width: 210px; right: -12%; top: -60%; opacity: .7; }
 }
 
 @media (max-width: 720px) {
