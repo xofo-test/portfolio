@@ -6,7 +6,7 @@
   <title>MR Tony MR — Senior Software Engineer</title>
   <meta name="description" content="MR Tony MR is a senior software engineer with 9+ years of experience building full-stack platforms, distributed systems and AI-powered products for fintech, commerce and insurance teams." />
   <meta name="color-scheme" content="dark light" />
-  <meta name="theme-color" content="#070a0f" />
+  <meta name="theme-color" content="#070707" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="MR Tony MR — Senior Software Engineer" />
   <meta property="og:description" content="9+ years shipping full-stack platforms, system design and production AI. Portfolio, case studies and architecture work." />
@@ -19,9 +19,6 @@
   <meta name="twitter:description" content="9+ years shipping full-stack platforms, system design and production AI. Portfolio, case studies and architecture work." />
   <link rel="canonical" href="https://alexmorgan.dev/" />
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;1,8..60,400&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
   <script>
     /* Apply the saved (or system) theme before first paint to avoid a flash. */
@@ -73,6 +70,17 @@
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
 
+  <aside class="rail rail-left" aria-hidden="true">
+    <span class="rail-bar"></span>
+    <span class="rail-text">Portfolio — 2026</span>
+    <span class="rail-mark">→</span>
+  </aside>
+  <aside class="rail rail-right" aria-hidden="true">
+    <span class="rail-bar"></span>
+    <span class="rail-text">MR Tony MR — Seattle, WA</span>
+    <span class="rail-mark">↓</span>
+  </aside>
+
   <header class="site-header" data-header>
     <div class="container header-inner">
       <a class="brand" href="index.html" aria-label="MR Tony MR — overview">
@@ -81,11 +89,11 @@
       </a>
 
       <nav class="nav" aria-label="Primary">
-        <a href="index.html" aria-current="page">Overview</a>
-        <a href="experience.html">Experience</a>
-        <a href="projects.html">Projects</a>
-        <a href="expertise.html">Expertise</a>
-        <a href="contact.html">Contact</a>
+        <a href="index.html" aria-current="page"><span class="nav-arrow" aria-hidden="true">→</span>Overview</a>
+        <a href="experience.html"><span class="nav-arrow" aria-hidden="true">→</span>Experience</a>
+        <a href="projects.html"><span class="nav-arrow" aria-hidden="true">→</span>Projects</a>
+        <a href="expertise.html"><span class="nav-arrow" aria-hidden="true">→</span>Expertise</a>
+        <a href="contact.html"><span class="nav-arrow" aria-hidden="true">→</span>Contact</a>
       </nav>
 
       <div class="header-actions">
@@ -115,13 +123,30 @@
   <main id="main">
     <!-- ============================ HERO ============================ -->
     <section class="hero" aria-labelledby="hero-title">
-      <div class="hero-bg" aria-hidden="true"></div>
+      <span class="deco deco-red deco-hero-top" aria-hidden="true"></span>
+      <span class="deco deco-red deco-hero-left" aria-hidden="true"></span>
+      <span class="deco deco-ring deco-hero-ring" aria-hidden="true"></span>
+
       <div class="container hero-grid">
         <div class="hero-copy">
           <p class="eyebrow"><span class="pulse" aria-hidden="true"></span> <span data-bind="identity.availability">Available for senior &amp; staff engineering roles</span></p>
 
-          <h1 id="hero-title" data-bind="identity.name">MR Tony MR</h1>
-          <p class="hero-role"><span data-bind="identity.role">Senior Software Engineer</span> <span class="sep" aria-hidden="true">/</span> <span data-bind="identity.subrole">Full-Stack &amp; AI Platforms</span></p>
+          <h1 id="hero-title" class="display-solid" data-bind="identity.name">MR Tony MR</h1>
+          <p class="display-outline" data-bind="identity.role">Senior Software Engineer</p>
+
+          <div class="hero-meta">
+            <div>
+              <span class="um">Full-stack · System design · AI</span>
+              <span>Full-Stack &amp; AI Platforms</span>
+            </div>
+            <div>
+              <span class="um">Based in</span>
+              <span>Seattle, WA — remote-friendly</span>
+            </div>
+          </div>
+
+          <p class="stamp">2016 — 2025</p>
+          <p class="stamp-label">Nine years in production</p>
 
           <p class="lead">
             Nine years of shipping software that has to work on a Tuesday morning at
@@ -140,34 +165,23 @@
 
           <div class="hero-actions">
             <a class="btn btn-primary" href="projects.html">
-              View My Work
+              View my work
               <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h13M13 6l6 6-6 6"/></svg>
             </a>
-            <a class="btn btn-ghost" href="contact.html">Contact Me</a>
+            <a class="btn btn-ghost" href="contact.html">Contact me</a>
           </div>
 
           <div class="hero-socials">
-            <a class="social-link" href="https://github.com/alexmorgan-dev" data-bind-href="social.github.url" rel="noopener">
-              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.9a3.4 3.4 0 0 0-1-2.6c3.3-.4 5.5-1.6 5.5-6a4.7 4.7 0 0 0-1.3-3.2 4.3 4.3 0 0 0-.1-3.2s-1.2-.4-3.6 1.3a12.4 12.4 0 0 0-6.4 0C5.6 1.7 4.4 2.1 4.4 2.1a4.3 4.3 0 0 0-.1 3.2A4.7 4.7 0 0 0 3 8.5c0 4.4 2.2 5.6 5.5 6a3.4 3.4 0 0 0-1 2.6V21"/></svg>
-              GitHub
-            </a>
-            <a class="social-link" href="https://www.linkedin.com/in/alexmorgan-dev" data-bind-href="social.linkedin.url" rel="noopener">
-              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M7.5 10.5V17M7.5 7.4v.1M11.5 17v-3.7a2.3 2.3 0 0 1 4.6 0V17"/></svg>
-              LinkedIn
-            </a>
-            <a class="social-link" href="mailto:alex@alexmorgan.dev" data-bind-href="identity.mailto">
-              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="m3.8 6.5 8.2 6 8.2-6"/></svg>
-              Email
-            </a>
-            <a class="social-link" href="resume.html">
-              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 3v12m0 0 4.5-4.5M12 15l-4.5-4.5M4 20h16"/></svg>
-              Résumé
-            </a>
+            <a class="social-link" href="https://github.com/alexmorgan-dev" data-bind-href="social.github.url" rel="noopener">GitHub</a>
+            <a class="social-link" href="https://www.linkedin.com/in/alexmorgan-dev" data-bind-href="social.linkedin.url" rel="noopener">LinkedIn</a>
+            <a class="social-link" href="mailto:alex@alexmorgan.dev" data-bind-href="identity.mailto">Email</a>
+            <a class="social-link" href="resume.html">Résumé</a>
           </div>
         </div>
 
         <div class="hero-visual" aria-hidden="true">
-          <div class="panel-glow"></div>
+          <span class="deco-bar"></span>
+          <span class="marker-col"><i></i><i></i><i></i></span>
 
           <div class="code-card reveal" data-reveal>
             <div class="code-head">
@@ -210,6 +224,11 @@
       </div>
 
       <div class="container">
+        <p class="credits">
+          React / TypeScript / Node.js / NestJS / PostgreSQL / pgvector / Redis / AWS /
+          Docker / GitHub Actions / LLM &amp; RAG
+        </p>
+
         <div class="hero-stats">
           <div class="stat"><span class="stat-value">9+</span><span class="stat-label">Years in production engineering</span></div>
           <div class="stat"><span class="stat-value">40+</span><span class="stat-label">Product releases shipped</span></div>
@@ -236,6 +255,7 @@
       <div class="container about-grid">
         <div class="about-portrait reveal" data-reveal>
           <div class="portrait-tile">
+            <span class="deco deco-red deco-portrait" aria-hidden="true"></span>
             <span class="portrait-mono" data-bind="identity.initials">TM</span>
             <span class="portrait-scan" aria-hidden="true"></span>
           </div>
@@ -246,8 +266,8 @@
         </div>
 
         <div class="about-copy">
-          <p class="kicker">About me</p>
-          <h2 id="about-title" class="h2 reveal" data-reveal>Engineering that survives contact with production.</h2>
+          <p class="kicker"><span class="kicker-arrow" aria-hidden="true">→</span> About me</p>
+          <h2 id="about-title" class="h2 reveal" data-reveal>Engineering that survives <span class="outline">contact with production.</span></h2>
           <div class="reveal" data-reveal>
             <p>
               I started in 2016 building Laravel and Angular applications for logistics
@@ -289,8 +309,8 @@
       <div class="container">
         <div class="section-head">
           <div>
-            <p class="kicker">Selected work</p>
-            <h2 id="work-title" class="h2">Three products, three kinds of hard.</h2>
+            <p class="kicker"><span class="kicker-arrow" aria-hidden="true">→</span> Selected work</p>
+            <h2 id="work-title" class="h2">Three products, <span class="outline">three kinds of hard.</span></h2>
           </div>
           <a class="text-link" href="projects.html">All case studies
             <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h13M13 6l6 6-6 6"/></svg>
@@ -301,6 +321,7 @@
           <article class="work-card reveal" data-reveal>
             <div class="work-thumb thumb-atlas" aria-hidden="true">
               <span class="thumb-grid"></span>
+              <span class="thumb-index">01</span>
               <span class="thumb-chips"><span class="thumb-chip">RAG</span><span class="thumb-chip">12 sources</span></span>
             </div>
             <div class="work-body">
@@ -319,6 +340,7 @@
           <article class="work-card reveal" data-reveal>
             <div class="work-thumb thumb-orbit" aria-hidden="true">
               <span class="thumb-grid"></span>
+              <span class="thumb-index">02</span>
               <span class="thumb-chips"><span class="thumb-chip">GraphQL</span><span class="thumb-chip">p95 380ms</span></span>
             </div>
             <div class="work-body">
@@ -337,6 +359,7 @@
           <article class="work-card reveal" data-reveal>
             <div class="work-thumb thumb-signal" aria-hidden="true">
               <span class="thumb-grid"></span>
+              <span class="thumb-index">03</span>
               <span class="thumb-chips"><span class="thumb-chip">Streaming</span><span class="thumb-chip">240M/day</span></span>
             </div>
             <div class="work-body">
@@ -359,8 +382,8 @@
     <section class="section" id="ai" aria-labelledby="ai-title">
       <div class="container ai-band">
         <div class="ai-copy reveal" data-reveal>
-          <p class="kicker">AI engineering</p>
-          <h2 id="ai-title" class="h2">AI features, with the engineering around them.</h2>
+          <p class="kicker"><span class="kicker-arrow" aria-hidden="true">→</span> AI engineering</p>
+          <h2 id="ai-title" class="h2">AI features, <span class="outline">with the engineering around them.</span></h2>
           <p>
             I have shipped four production AI systems since 2023 — two retrieval-heavy
             assistants, a document extraction pipeline and an agentic workflow tool. The
@@ -384,9 +407,9 @@
     <section class="section cta-section" aria-labelledby="cta-title">
       <div class="container">
         <div class="cta-card reveal" data-reveal>
-          <div class="cta-glow" aria-hidden="true"></div>
-          <p class="kicker">Next role</p>
-          <h2 id="cta-title" class="h2">Let’s build something that holds up in production.</h2>
+          <span class="deco deco-red deco-cta" aria-hidden="true"></span>
+          <p class="kicker"><span class="kicker-arrow" aria-hidden="true">→</span> Next role</p>
+          <h2 id="cta-title" class="h2">Let’s build something <span class="outline">that holds up in production.</span></h2>
           <p class="cta-sub">I’m interviewing for senior, staff and lead engineering roles on teams building real products — especially where full-stack delivery meets AI.</p>
           <div class="hero-actions">
             <a class="btn btn-primary" href="contact.html">Start a conversation</a>
@@ -416,13 +439,12 @@
         <a href="mailto:alex@alexmorgan.dev" data-bind-href="identity.mailto" data-bind="identity.email">alex@alexmorgan.dev</a>
         <a href="https://www.linkedin.com/in/alexmorgan-dev" data-bind-href="social.linkedin.url" rel="noopener">LinkedIn</a>
         <a href="https://github.com/alexmorgan-dev" data-bind-href="social.github.url" rel="noopener">GitHub</a>
-        <p class="footer-note">© <span data-year>2025</span> <span data-bind="identity.name">MR Tony MR</span> · Static portfolio, no tracking.</p>
+        <p class="footer-note">&copy; <span data-year>2025</span> <span data-bind="identity.name">MR Tony MR</span> · Static portfolio, no tracking.</p>
       </div>
     </div>
   </footer>
 
   <div class="toast" role="status" aria-live="polite" data-toast hidden></div>
-
   <script src="app.js" defer></script>
 </body>
 </html>

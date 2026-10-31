@@ -145,7 +145,7 @@
       toggles[i].setAttribute('aria-label', label);
       toggles[i].setAttribute('title', label);
     }
-    if (themeMeta) themeMeta.setAttribute('content', isDark ? '#070a0f' : '#f6f7fb');
+    if (themeMeta) themeMeta.setAttribute('content', isDark ? '#070707' : '#f3efec');
   }
 
   syncThemeControls();
