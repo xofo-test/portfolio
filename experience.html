@@ -6,7 +6,7 @@
   <title>Experience &amp; Skills — MR Tony MR, Senior Software Engineer</title>
   <meta name="description" content="Nine years of professional experience: Staff Engineer at Meridian Labs, Senior Full-Stack Engineer at Helix Commerce, and earlier Laravel, Angular and Node.js roles. Timeline, technical skills and measurable outcomes." />
   <meta name="color-scheme" content="dark light" />
-  <meta name="theme-color" content="#070a0f" />
+  <meta name="theme-color" content="#070707" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Experience &amp; Skills — MR Tony MR, Senior Software Engineer" />
   <meta property="og:description" content="Nine years of professional experience: Staff Engineer at Meridian Labs, Senior Full-Stack Engineer at Helix Commerce, and earlier Laravel, Angular and Node.js roles. Timeline, technical skills and measurable outcomes." />
@@ -19,9 +19,6 @@
   <meta name="twitter:description" content="Nine years of professional experience: Staff Engineer at Meridian Labs, Senior Full-Stack Engineer at Helix Commerce, and earlier Laravel, Angular and Node.js roles." />
   <link rel="canonical" href="https://alexmorgan.dev/experience.html" />
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;1,8..60,400&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
   <script>
     (function () {
@@ -38,6 +35,17 @@
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
 
+  <aside class="rail rail-left" aria-hidden="true">
+    <span class="rail-bar"></span>
+    <span class="rail-text">Portfolio — 2026</span>
+    <span class="rail-mark">→</span>
+  </aside>
+  <aside class="rail rail-right" aria-hidden="true">
+    <span class="rail-bar"></span>
+    <span class="rail-text">MR Tony MR — Seattle, WA</span>
+    <span class="rail-mark">↓</span>
+  </aside>
+
   <header class="site-header" data-header>
     <div class="container header-inner">
       <a class="brand" href="index.html" aria-label="MR Tony MR — overview">
@@ -45,11 +53,11 @@
         <span class="brand-text"><span data-bind="identity.brand.first">tony</span><span class="brand-dot">.</span><span data-bind="identity.brand.last">mr</span></span>
       </a>
       <nav class="nav" aria-label="Primary">
-        <a href="index.html">Overview</a>
-        <a href="experience.html" aria-current="page">Experience</a>
-        <a href="projects.html">Projects</a>
-        <a href="expertise.html">Expertise</a>
-        <a href="contact.html">Contact</a>
+        <a href="index.html"><span class="nav-arrow" aria-hidden="true">→</span>Overview</a>
+        <a href="experience.html" aria-current="page"><span class="nav-arrow" aria-hidden="true">→</span>Experience</a>
+        <a href="projects.html"><span class="nav-arrow" aria-hidden="true">→</span>Projects</a>
+        <a href="expertise.html"><span class="nav-arrow" aria-hidden="true">→</span>Expertise</a>
+        <a href="contact.html"><span class="nav-arrow" aria-hidden="true">→</span>Contact</a>
       </nav>
       <div class="header-actions">
         <button class="icon-btn theme-toggle" type="button" data-theme-toggle aria-label="Switch to light theme" title="Switch theme">
@@ -76,9 +84,11 @@
 
   <main id="main">
     <section class="page-head" aria-labelledby="page-title">
+      <span class="deco deco-red deco-page" aria-hidden="true"></span>
+      <span class="page-index" aria-hidden="true">02</span>
       <div class="container">
-        <p class="kicker">Experience &amp; skills</p>
-        <h1 class="h1" id="page-title">Nine years of shipping, with the receipts.</h1>
+        <p class="kicker"><span class="kicker-arrow" aria-hidden="true">→</span> Experience &amp; skills</p>
+        <h1 class="h1" id="page-title">Nine years of shipping, <span class="outline">with the receipts.</span></h1>
         <p class="lead">
           Four teams, from agency work in Laravel and Angular to owning the architecture
           of a regulated payments platform. Below is the work as a recruiter would want
@@ -98,8 +108,8 @@
       <div class="container">
         <div class="section-head">
           <div>
-            <p class="kicker">Professional experience</p>
-            <h2 class="h2" id="timeline-title">Where I’ve done the work.</h2>
+            <p class="kicker"><span class="kicker-arrow" aria-hidden="true">→</span> Professional experience</p>
+            <h2 class="h2" id="timeline-title">Where I’ve <span class="outline">done the work.</span></h2>
           </div>
           <a class="text-link" href="projects.html">See the case studies
             <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h13M13 6l6 6-6 6"/></svg>
@@ -195,8 +205,8 @@
       <div class="container">
         <div class="section-head">
           <div>
-            <p class="kicker">Technical skills</p>
-            <h2 class="h2" id="skills-title">Depth where it matters.</h2>
+            <p class="kicker"><span class="kicker-arrow" aria-hidden="true">→</span> Technical skills</p>
+            <h2 class="h2" id="skills-title">Depth <span class="outline">where it matters.</span></h2>
           </div>
           <p class="muted section-note">Levels reflect day-to-day production use, not certification counts. The full stack lives in the <a class="text-link" href="expertise.html">expertise section</a>.</p>
         </div>
@@ -268,8 +278,8 @@
       <div class="container">
         <div class="section-head">
           <div>
-            <p class="kicker">Achievements</p>
-            <h2 class="h2" id="achievements-title">Numbers I can defend in an interview.</h2>
+            <p class="kicker"><span class="kicker-arrow" aria-hidden="true">→</span> Achievements</p>
+            <h2 class="h2" id="achievements-title">Numbers I can defend <span class="outline">in an interview.</span></h2>
           </div>
         </div>
 
@@ -311,8 +321,9 @@
     <section class="section cta-section" aria-labelledby="exp-cta-title">
       <div class="container">
         <div class="cta-card reveal" data-reveal>
-          <p class="kicker">Keep going</p>
-          <h2 class="h2" id="exp-cta-title">Want the architecture version of this story?</h2>
+          <span class="deco deco-red deco-cta" aria-hidden="true"></span>
+          <p class="kicker"><span class="kicker-arrow" aria-hidden="true">→</span> Keep going</p>
+          <h2 class="h2" id="exp-cta-title">Want the architecture <span class="outline">version of this story?</span></h2>
           <p class="cta-sub">The case studies cover business problem, solution, architecture, challenges and outcomes. For a one-page summary, the résumé is print-ready.</p>
           <div class="hero-actions">
             <a class="btn btn-primary" href="projects.html">Read the case studies</a>
@@ -342,7 +353,7 @@
         <a href="mailto:alex@alexmorgan.dev" data-bind-href="identity.mailto" data-bind="identity.email">alex@alexmorgan.dev</a>
         <a href="https://www.linkedin.com/in/alexmorgan-dev" data-bind-href="social.linkedin.url" rel="noopener">LinkedIn</a>
         <a href="https://github.com/alexmorgan-dev" data-bind-href="social.github.url" rel="noopener">GitHub</a>
-        <p class="footer-note">© <span data-year>2025</span> <span data-bind="identity.name">MR Tony MR</span> · Static portfolio, no tracking.</p>
+        <p class="footer-note">&copy; <span data-year>2025</span> <span data-bind="identity.name">MR Tony MR</span> · Static portfolio, no tracking.</p>
       </div>
     </div>
   </footer>
